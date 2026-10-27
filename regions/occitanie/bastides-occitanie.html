@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Les bastides du Midi — L'Âme des Régions</title>
+  <link rel="stylesheet" href="../../commun/site.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<!-- Couverture du livre (image rangée dans images/couvertures/) et retour à la bibliothèque -->
+<body data-livre-cuir="#3B0E02" class="produit-page" data-livre-couverture="images/couvertures/bastides-occitanie.webp" data-livre-retour="bibliotheque.html">
+
+  <!-- ══════════════════════════════════════════
+       HÉRO
+  ══════════════════════════════════════════ -->
+  <div class="produit-body">
+    <div class="container">
+      <div class="produit-layout">
+
+        <div>
+
+          <!-- ═══ COMPRENDRE ═══ -->
+          <section class="section" id="comprendre">
+            <h2 class="section-titre"><div class="section-titre-icon">📖</div>Qu'est-ce qu'une bastide ?</h2>
+            <div class="histoire-texte">
+              <p><strong>Une bastide est une ville neuve fondée d'un seul coup</strong>, sur un terrain souvent vierge, par un seigneur, un roi ou une abbaye, entre le XIII<sup>e</sup> et le milieu du XIV<sup>e</sup> siècle. Le mot vient de l'occitan <em>bastida</em>, « bâtie », « construction ». On en compte plusieurs centaines dans le Sud-Ouest de la France, de la Dordogne aux Pyrénées et du Gers au Tarn : c'est le plus grand mouvement de création urbaine de l'Europe médiévale.</p>
+              <p>Une bastide se reconnaît à trois traits : un <strong>plan régulier</strong> aux rues droites, une <strong>place centrale</strong> bordée d'arcades (les <em>cornières</em> ou <em>couverts</em>) qui abrite le marché, et une <strong>charte de coutumes</strong> qui accorde aux habitants des libertés et des droits. Ce n'est pas d'abord une forteresse : beaucoup n'ont reçu leurs murailles que tardivement, pendant la guerre de Cent Ans.</p>
+
+              <div class="repere-grid">
+                <div class="repere"><strong>1144</strong><span>Montauban, « ville neuve » du comte de Toulouse, préfigure les bastides.</span></div>
+                <div class="repere"><strong>1250 – 1300</strong><span>Âge d'or : Alphonse de Poitiers et les sénéchaux royaux multiplient les fondations.</span></div>
+                <div class="repere"><strong>v. 1340 – 1373</strong><span>Dernières créations ; la guerre de Cent Ans et la peste mettent fin au mouvement.</span></div>
+              </div>
+
+              <div class="notice"><strong>À retenir :</strong> une bastide est d'abord un projet <strong>économique et politique</strong> : peupler des terres, créer un marché, lever des taxes et affirmer son autorité. Les remparts, quand il y en a, sont souvent venus après.</div>
+            </div>
+
+            <h3 class="sous-titre">Les vagues de fondation</h3>
+            <figure class="schema">
+              <svg viewBox="0 0 640 250" role="img" aria-label="Frise de quelques bastides d'Occitanie de 1144 à 1342">
+                <rect width="640" height="250" fill="#FBF8F2"/>
+                <!-- x = 40 + (année-1140)*2.8 -->
+                <rect x="40" y="110" width="168" height="20" fill="#E8DEC8"/>
+                <rect x="208" y="110" width="98" height="20" fill="#E8C99A"/>
+                <rect x="306" y="110" width="210" height="20" fill="#C8843A"/>
+                <rect x="516" y="110" width="84" height="20" fill="#B8A58A"/>
+                <g font-family="Source Sans 3, sans-serif" font-size="10" text-anchor="middle" fill="#5A3E1B" font-weight="700">
+                  <text x="124" y="124">Précurseurs</text>
+                  <text x="257" y="124">Comtes de Toulouse</text>
+                  <text x="411" y="124" fill="white">Alphonse de Poitiers et le roi</text>
+                  <text x="558" y="124" fill="white">Fin</text>
+                </g>
+                <g font-family="Source Sans 3, sans-serif" font-size="10" fill="#8B7355" text-anchor="middle">
+                  <line x1="40" y1="135" x2="600" y2="135" stroke="#B8A58A"/>
+                  <text x="40" y="150">1140</text><text x="152" y="150">1180</text><text x="264" y="150">1220</text>
+                  <text x="376" y="150">1260</text><text x="488" y="150">1300</text><text x="600" y="150">1340</text>
+                </g>
+                <!-- points au-dessus -->
+                <g font-family="Source Sans 3, sans-serif" font-size="10" fill="#2C2418">
+                  <circle cx="51" cy="100" r="5" fill="#2C4A7C"/><text x="51" y="90" text-anchor="middle">Montauban 1144</text>
+                  <circle cx="275" cy="100" r="5" fill="#2C4A7C"/><text x="262" y="62" text-anchor="middle">Cordes 1222</text>
+                  <line x1="275" y1="95" x2="268" y2="66" stroke="#B8A58A"/>
+                  <circle cx="365" cy="100" r="5" fill="#2C4A7C"/><text x="365" y="62" text-anchor="middle">Villefranche-de-R. 1252</text>
+                  <line x1="365" y1="95" x2="365" y2="66" stroke="#B8A58A"/>
+                  <circle cx="373" cy="100" r="4" fill="#2C4A7C"/>
+                  <circle cx="429" cy="100" r="5" fill="#2C4A7C"/><text x="429" y="88" text-anchor="middle">Fleurance 1274</text>
+                  <circle cx="437" cy="100" r="4" fill="#2C4A7C"/>
+                  <circle cx="454" cy="100" r="5" fill="#2C4A7C"/><text x="470" y="40" text-anchor="middle">Mirande 1281</text>
+                  <line x1="454" y1="95" x2="468" y2="44" stroke="#B8A58A"/>
+                  <circle cx="480" cy="100" r="5" fill="#2C4A7C"/><text x="530" y="62" text-anchor="middle">Grenade 1290</text>
+                  <line x1="480" y1="95" x2="520" y2="66" stroke="#B8A58A"/>
+                  <circle cx="502" cy="100" r="5" fill="#2C4A7C"/><text x="560" y="88" text-anchor="middle">Marciac 1298</text>
+                </g>
+                <g font-family="Source Sans 3, sans-serif" font-size="10" fill="#2C2418">
+                  <circle cx="320" cy="170" r="5" fill="#A0522D"/><text x="320" y="190" text-anchor="middle">Carcassonne, bastide St-Louis 1247-1260</text>
+                  <circle cx="452" cy="170" r="4" fill="#A0522D"/><text x="452" y="208" text-anchor="middle">Sauveterre-de-R. 1281</text>
+                  <circle cx="512" cy="170" r="4" fill="#A0522D"/><text x="512" y="226" text-anchor="middle">Mirepoix 1289</text>
+                  <circle cx="584" cy="170" r="5" fill="#A0522D"/><text x="584" y="190" text-anchor="middle">Revel 1342</text>
+                  <line x1="452" y1="175" x2="452" y2="198" stroke="#B8A58A"/><line x1="512" y1="175" x2="512" y2="216" stroke="#B8A58A"/>
+                </g>
+              </svg>
+              <figcaption>Quelques bastides d'Occitanie placées sur une frise à l'échelle : la grande majorité des fondations se concentre entre 1250 et 1300.</figcaption>
+            </figure>
+          </section>
+
+          <!-- ═══ POURQUOI ═══ -->
+          <section class="section" id="pourquoi">
+            <h2 class="section-titre"><div class="section-titre-icon">❓</div>Pourquoi fonder des villes neuves ?</h2>
+            <div class="histoire-texte">
+              <p>Au XIII<sup>e</sup> siècle, l'Europe connaît une forte <strong>croissance démographique</strong>. Les campagnes sont pleines, les paysans cherchent des terres et de meilleures conditions. Dans le Sud-Ouest, la <strong>croisade contre les Albigeois</strong> (1209-1229) a ruiné de nombreux villages et dispersé des populations ; le pays est à reconstruire et à contrôler. Plus à l'ouest, l'Aquitaine appartient au roi d'Angleterre, et Français et Anglais se disputent les fidélités.</p>
+              <p>Pour un seigneur, fonder une bastide est un excellent placement : il attire des habitants en leur promettant un lot de terre et des libertés, puis perçoit les cens, les taxes du marché et les droits de justice. Pour le roi ou le comte, c'est aussi un moyen d'affirmer son autorité face aux seigneurs locaux et à l'Église.</p>
+            </div>
+            <div class="compare">
+              <div class="compare-col compare-cath">
+                <h4>Ce que le fondateur y gagne</h4>
+                <ul>
+                  <li>Des <strong>revenus</strong> réguliers : cens, taxes sur le marché et les foires, amendes</li>
+                  <li>Le <strong>contrôle</strong> d'un territoire, d'une route ou d'une frontière</li>
+                  <li>Un <strong>prestige</strong> politique face aux rivaux</li>
+                  <li>La mise en valeur de terres incultes ou de forêts</li>
+                </ul>
+              </div>
+              <div class="compare-col compare-rom">
+                <h4>Ce que les habitants y gagnent</h4>
+                <ul>
+                  <li>Un <strong>lot</strong> à bâtir, un jardin, parfois des terres agricoles</li>
+                  <li>La <strong>liberté personnelle</strong> : on n'est plus serf</li>
+                  <li>Des <strong>consuls</strong> élus et des impôts fixés par écrit</li>
+                  <li>Un <strong>marché</strong> pour vendre ses produits</li>
+                </ul>
+              </div>
+            </div>
+            <div class="commentaire">
+              <div class="commentaire-titre">💬 Commentaire · une suite de la croisade</div>
+              <p>Les bastides sont la face « constructive » de la conquête du Midi. Après les bûchers et les sièges, les comtes de Toulouse puis les Capétiens réorganisent le territoire en créant des villes qui leur sont fidèles. La ville basse de Carcassonne, la bastide Saint-Louis, est le symbole de ce passage : ses habitants, expulsés après la révolte de 1240, sont réinstallés dans une ville neuve sur l'autre rive de l'Aude, au pied de la Cité royale.</p>
+            </div>
+          </section>
+
+          <!-- ═══ FONDATEURS ═══ -->
+          <section class="section" id="fondateurs">
+            <h2 class="section-titre"><div class="section-titre-icon">👑</div>Les grands fondateurs</h2>
+            <div class="tableau-wrap">
+              <table class="tableau">
+                <thead><tr><th>Fondateur</th><th>Période</th><th>Rôle</th><th>Exemples en Occitanie</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Comtes de Toulouse</strong> (Alphonse Jourdain, Raymond VII)</td><td>1144 – 1249</td><td>Repeupler et tenir le comté pendant et après la croisade</td><td>Montauban, Cordes, Castelnau-de-Montmiral, Lisle-sur-Tarn</td></tr>
+                  <tr><td><strong>Alphonse de Poitiers</strong></td><td>1249 – 1271</td><td>Frère de Saint Louis, comte de Toulouse par mariage ; administrateur méthodique, il fonde des dizaines de bastides</td><td>Villefranche-de-Rouergue, Montréal (Gers)</td></tr>
+                  <tr><td><strong>Sénéchaux du roi de France</strong> (Eustache de Beaumarchais…)</td><td>1271 – 1340</td><td>Après 1271, le comté de Toulouse est royal ; les sénéchaux fondent en paréage avec abbayes et seigneurs</td><td>Fleurance, Mirande, Grenade, Beaumont-de-Lomagne, Marciac, Réalmont, Sauveterre-de-Rouergue</td></tr>
+                  <tr><td><strong>Roi d'Angleterre</strong>, duc d'Aquitaine</td><td>1250 – 1330</td><td>Tenir la Gascogne face aux Capétiens</td><td>Surtout hors d'Occitanie (Monpazier, en Dordogne)</td></tr>
+                  <tr><td><strong>Seigneurs et abbayes</strong></td><td>tout le XIII<sup>e</sup> s.</td><td>Mettre en valeur leurs terres, souvent associés à un prince</td><td>Mirepoix (Lévis), abbayes de Grandselve, Berdoues, La Case-Dieu</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="encadre">
+              <strong>🔎 Eustache de Beaumarchais, le « bâtisseur »</strong><br>
+              Sénéchal de Toulouse et d'Albigeois pour le roi Philippe III, puis Philippe IV, ce chevalier picard est l'un des fondateurs les plus actifs : Fleurance, Mirande, Grenade, Solomiac, Valence-sur-Baïse lui sont associées. Il incarne l'État capétien qui s'installe dans le Midi par le droit et l'urbanisme autant que par les armes.
+            </div>
+          </section>
+
+          <!-- ═══ FONDATION ═══ -->
+          <section class="section" id="fondation">
+            <h2 class="section-titre"><div class="section-titre-icon">📜</div>Comment fonde-t-on une bastide ?</h2>
+            <div class="histoire-texte">
+              <p>La plupart des bastides naissent d'un <strong>contrat de paréage</strong> : le propriétaire du sol, souvent une abbaye cistercienne ou un petit seigneur, s'associe au roi ou au comte. L'un apporte la terre, l'autre la protection et l'autorité ; ils se partagent ensuite les revenus, généralement à parts égales.</p>
+              <p>On plante d'abord un <strong>pal</strong> (un poteau) aux armes du fondateur pour marquer le lieu, puis un arpenteur trace les rues au cordeau et découpe des lots égaux. Une <strong>charte de coutumes</strong> fixe les droits et devoirs : montant du cens, organisation du marché, élection des consuls, règles de justice. Les colons, venus des alentours, reçoivent chacun un emplacement à bâtir, un jardin et souvent une parcelle de terre agricole.</p>
+            </div>
+            <div class="schema">
+              <span class="schema-titre">Les étapes d'une fondation</span>
+              <div class="schema-flow">
+                <div class="schema-box">1<br><b>Paréage</b><br><span class="small">accord entre seigneur du sol et prince</span></div>
+                <div class="schema-arrow">→</div>
+                <div class="schema-box">2<br><b>Plantation du pal</b><br><span class="small">aux armes du fondateur</span></div>
+                <div class="schema-arrow">→</div>
+                <div class="schema-box">3<br><b>Arpentage</b><br><span class="small">rues au cordeau, lots égaux</span></div>
+                <div class="schema-arrow">→</div>
+                <div class="schema-box">4<br><b>Charte de coutumes</b><br><span class="small">libertés, cens, consuls</span></div>
+                <div class="schema-arrow">→</div>
+                <div class="schema-box fort">5<br><b>Peuplement</b><br><span style="font-size:12px;opacity:.85">marché, église, halle</span></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ═══ PLAN ═══ -->
+          <section class="section" id="plan">
+            <h2 class="section-titre"><div class="section-titre-icon">📐</div>Le plan d'une bastide</h2>
+            <div class="histoire-texte">
+              <p>Le plan « en damier » n'est pas une règle absolue : les bastides s'adaptent au relief. Celles de plaine (Mirande, Grenade, Marciac) sont presque parfaitement quadrillées ; celles de colline (Cordes, Najac) s'étirent le long d'une crête. Mais on retrouve partout les mêmes éléments.</p>
+            </div>
+            <figure class="schema">
+              <svg viewBox="0 0 640 400" role="img" aria-label="Plan type d'une bastide">
+                <rect width="640" height="400" fill="#FBF8F2"/>
+                <!-- fossé / murs -->
+                <rect x="40" y="30" width="420" height="340" rx="10" fill="none" stroke="#8B7355" stroke-width="5" stroke-dasharray="14 6"/>
+                <!-- îlots -->
+                <g fill="#EFE6D6" stroke="#D6C9AE">
+                  <rect x="60" y="50" width="110" height="80"/><rect x="190" y="50" width="110" height="80"/><rect x="320" y="50" width="120" height="80"/>
+                  <rect x="60" y="150" width="110" height="100"/><rect x="320" y="150" width="120" height="100"/>
+                  <rect x="60" y="270" width="110" height="80"/><rect x="190" y="270" width="110" height="80"/><rect x="320" y="270" width="120" height="80"/>
+                </g>
+                <!-- lots (ayrals) -->
+                <g stroke="#D6C9AE">
+                  <line x1="82" y1="50" x2="82" y2="130"/><line x1="104" y1="50" x2="104" y2="130"/><line x1="126" y1="50" x2="126" y2="130"/><line x1="148" y1="50" x2="148" y2="130"/>
+                  <line x1="212" y1="270" x2="212" y2="350"/><line x1="234" y1="270" x2="234" y2="350"/><line x1="256" y1="270" x2="256" y2="350"/><line x1="278" y1="270" x2="278" y2="350"/>
+                </g>
+                <!-- place -->
+                <rect x="190" y="150" width="110" height="100" fill="#F2D59A" stroke="#C8843A" stroke-width="2"/>
+                <rect x="198" y="158" width="94" height="84" fill="none" stroke="#C8843A" stroke-width="5" stroke-dasharray="3 3" opacity=".6"/>
+                <rect x="222" y="182" width="46" height="36" fill="#A89576" stroke="#5A3E1B"/>
+                <text x="245" y="204" font-family="Source Sans 3, sans-serif" font-size="10" text-anchor="middle" fill="white" font-weight="700">Halle</text>
+                <!-- église -->
+                <rect x="345" y="165" width="60" height="30" fill="#7A3E7C"/><rect x="395" y="160" width="20" height="40" fill="#7A3E7C"/>
+                <!-- carreyrous -->
+                <line x1="115" y1="50" x2="115" y2="130" stroke="#B8A58A" stroke-width="0"/>
+                <!-- portes -->
+                <g fill="#B03A2E"><rect x="236" y="22" width="18" height="16"/><rect x="236" y="362" width="18" height="16"/><rect x="32" y="191" width="16" height="18"/><rect x="452" y="191" width="16" height="18"/></g>
+                <!-- légendes -->
+                <g font-family="Source Sans 3, sans-serif" font-size="11.5" fill="#2C2418">
+                  <line x1="300" y1="160" x2="490" y2="70" stroke="#5A3E1B"/><text x="495" y="66" font-weight="700">Place centrale</text><text x="495" y="80">marché, foires</text>
+                  <line x1="296" y1="240" x2="490" y2="130" stroke="#C8843A"/><text x="495" y="126" font-weight="700" fill="#8B5E0A">Cornières</text><text x="495" y="140">arcades autour de la place</text>
+                  <line x1="268" y1="200" x2="490" y2="190" stroke="#5A3E1B"/><text x="495" y="186" font-weight="700">Halle</text><text x="495" y="200">couverte, poids et mesures</text>
+                  <line x1="410" y1="180" x2="490" y2="245" stroke="#7A3E7C"/><text x="495" y="245" font-weight="700" fill="#7A3E7C">Église</text><text x="495" y="259">à l'écart de la place</text>
+                  <line x1="104" y1="90" x2="490" y2="305" stroke="#B8A58A"/><text x="495" y="305" font-weight="700">Ayrals</text><text x="495" y="319">lots étroits et égaux</text>
+                  <line x1="460" y1="200" x2="490" y2="355" stroke="#B03A2E"/><text x="495" y="355" font-weight="700" fill="#B03A2E">Portes</text><text x="495" y="369">murs souvent tardifs</text>
+                </g>
+              </svg>
+              <figcaption>Plan type d'une bastide de plaine (schéma). Les îlots sont séparés par des rues principales (carreyres) et des ruelles (carreyrous).</figcaption>
+            </figure>
+            <div class="tableau-wrap">
+              <table class="tableau">
+                <thead><tr><th>Élément</th><th>Nom occitan</th><th>Fonction</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Place centrale</strong></td><td>plaça</td><td>Cœur économique : marché hebdomadaire, foires, annonces publiques</td></tr>
+                  <tr><td><strong>Cornières</strong></td><td>cornièras, embans</td><td>Galeries couvertes qui protègent les échoppes du soleil et de la pluie</td></tr>
+                  <tr><td><strong>Halle</strong></td><td>ala</td><td>Abri du marché, mesures à grains de référence, parfois maison commune à l'étage</td></tr>
+                  <tr><td><strong>Lot à bâtir</strong></td><td>airal, ayral</td><td>Parcelle étroite et profonde, de taille égale pour chaque colon</td></tr>
+                  <tr><td><strong>Rues</strong></td><td>carrièra / carrieròt</td><td>Rues principales pour les charrettes, ruelles secondaires</td></tr>
+                  <tr><td><strong>Andronne</strong></td><td>androna</td><td>Étroit passage entre deux maisons, contre les incendies et pour les eaux usées</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- ═══ VIE ═══ -->
+          <section class="section" id="vie">
+            <h2 class="section-titre"><div class="section-titre-icon">🏛️</div>Vivre dans une bastide</h2>
+            <div class="histoire-texte">
+              <p>La bastide est gouvernée par des <strong>consuls</strong>, élus ou cooptés chaque année parmi les habitants, qui gèrent les affaires communes, la police du marché et parfois la basse justice, sous le contrôle du représentant du seigneur, le <strong>bayle</strong>. Le marché hebdomadaire, fixé par la charte, et les foires annuelles font vivre la ville : on y vend grains, vin, bétail, draps et cuirs.</p>
+              <p>La population mêle paysans, qui sortent chaque jour travailler leurs champs, artisans et marchands. Les bastides prospères comptaient de quelques centaines à quelques milliers d'habitants ; beaucoup sont restées de gros villages, et certaines n'ont jamais été vraiment peuplées.</p>
+            </div>
+            <div class="citation-bloc">
+              <p>« Que tous ceux qui viendront habiter la bastide soient libres et francs. »</p>
+              <cite>— Formule type des chartes de coutumes (traduction résumée)</cite>
+            </div>
+            <div class="commentaire">
+              <div class="commentaire-titre">💬 Commentaire · une petite révolution juridique</div>
+              <p>Dans un monde où la plupart des paysans dépendent d'un seigneur, les chartes de bastide écrivent noir sur blanc des droits précis : on sait ce que l'on doit payer, on peut vendre son bien, léguer, se marier librement. C'est une étape vers l'idée de citoyen, même si le pouvoir reste entre les mains du fondateur et d'une élite de notables.</p>
+            </div>
+          </section>
+
+          <!-- ═══ CENT ANS ═══ -->
+          <section class="section" id="cent-ans">
+            <h2 class="section-titre"><div class="section-titre-icon">⚔️</div>De la guerre de Cent Ans à aujourd'hui</h2>
+            <div class="histoire-texte">
+              <p>À partir de 1337, la <strong>guerre de Cent Ans</strong> oppose les rois de France et d'Angleterre ; le Sud-Ouest est traversé par les chevauchées anglaises (celle du Prince Noir en 1355 atteint Narbonne) et ravagé par les « grandes compagnies » de routiers. Les bastides, jusque-là ouvertes, se dotent en hâte de <strong>murailles</strong>, de fossés et de portes fortifiées. La <strong>peste noire</strong> de 1348 vide les villes et met fin aux fondations : Revel (1342) est l'une des dernières grandes bastides.</p>
+              <p>Aux XVI<sup>e</sup> et XVII<sup>e</sup> siècles, les guerres de Religion touchent durement certaines d'entre elles (Montauban devient une place forte protestante). Puis, à l'écart des grandes routes de l'industrie, beaucoup s'endorment : ce sommeil a préservé leur plan, leurs halles et leurs cornières. Aujourd'hui, elles attirent les visiteurs, et certaines ont trouvé une nouvelle vie culturelle, comme <strong>Marciac</strong> avec son festival de jazz, ou <strong>Cordes-sur-Ciel</strong>, élue « village préféré des Français » en 2014.</p>
+            </div>
+          </section>
+
+          <!-- ═══ LISTE ═══ -->
+          <section class="section" id="bastides">
+            <h2 class="section-titre"><div class="section-titre-icon">🗺️</div>Les bastides d'Occitanie</h2>
+            <figure class="schema">
+              <svg viewBox="0 0 640 380" role="img" aria-label="Carte schématique des bastides d'Occitanie">
+                <rect width="640" height="380" fill="#FBF8F2"/>
+                <!-- Garonne, Tarn, Aveyron -->
+                <g fill="none" stroke="#7FA3C8" stroke-width="2">
+                  <path d="M150 370 Q 200 300 260 240 Q 290 200 300 150 T 330 20"/>
+                  <path d="M560 160 Q 480 170 420 160 Q 360 155 300 150"/>
+                  <path d="M560 80 Q 470 100 400 120 Q 350 135 310 140"/>
+                </g>
+                <g font-family="Source Sans 3, sans-serif" font-size="10" font-style="italic" fill="#5A7FA8">
+                  <text x="225" y="270">Garonne</text><text x="470" y="178">Tarn</text><text x="470" y="96">Aveyron</text>
+                </g>
+                <!-- départements -->
+                <g font-family="Playfair Display, serif" font-size="12" fill="#B8A58A" font-weight="700" letter-spacing="1.5">
+                  <text x="70" y="260">GERS</text><text x="230" y="100">TARN-ET-GARONNE</text>
+                  <text x="440" y="60">AVEYRON</text><text x="420" y="230">TARN</text><text x="230" y="330">HAUTE-GARONNE</text>
+                  <text x="380" y="350">AUDE · ARIÈGE</text>
+                </g>
+                <!-- Toulouse -->
+                <circle cx="285" cy="235" r="7" fill="#2C2418"/>
+                <text x="295" y="240" font-family="Source Sans 3, sans-serif" font-size="12" font-weight="700" fill="#2C2418">Toulouse</text>
+                <!-- bastides -->
+                <g font-family="Source Sans 3, sans-serif" font-size="11" fill="#2C4A7C" font-weight="600">
+                  <g fill="#C8843A">
+                    <rect x="279" y="139" width="10" height="10" transform="rotate(45 284 144)"/>
+                    <rect x="385" y="161" width="10" height="10" transform="rotate(45 390 166)"/>
+                    <rect x="415" y="91" width="10" height="10" transform="rotate(45 420 96)"/>
+                    <rect x="505" y="111" width="10" height="10" transform="rotate(45 510 116)"/>
+                    <rect x="150" y="181" width="10" height="10" transform="rotate(45 155 186)"/>
+                    <rect x="105" y="241" width="10" height="10" transform="rotate(45 110 246)"/>
+                    <rect x="75" y="291" width="10" height="10" transform="rotate(45 80 296)"/>
+                    <rect x="215" y="171" width="10" height="10" transform="rotate(45 220 176)"/>
+                    <rect x="260" y="201" width="10" height="10" transform="rotate(45 265 206)"/>
+                    <rect x="355" y="191" width="10" height="10" transform="rotate(45 360 196)"/>
+                    <rect x="455" y="181" width="10" height="10" transform="rotate(45 460 186)"/>
+                    <rect x="370" y="281" width="10" height="10" transform="rotate(45 375 286)"/>
+                    <rect x="470" y="301" width="10" height="10" transform="rotate(45 475 306)"/>
+                    <rect x="410" y="321" width="10" height="10" transform="rotate(45 415 326)"/>
+                    <rect x="125" y="141" width="10" height="10" transform="rotate(45 130 146)"/>
+                  </g>
+                  <text x="292" y="140">Montauban</text>
+                  <text x="398" y="162">Cordes</text>
+                  <text x="428" y="92">Najac</text>
+                  <text x="452" y="134">Villefranche-de-R.</text>
+                  <text x="163" y="182">Beaumont-de-L.</text>
+                  <text x="118" y="242">Fleurance</text>
+                  <text x="88" y="292">Mirande</text>
+                  <text x="56" y="316">Marciac ↙</text>
+                  <text x="190" y="165">Grenade ↓</text>
+                  <text x="200" y="214">Cologne</text>
+                  <text x="333" y="210">Lisle-sur-Tarn</text>
+                  <text x="468" y="190">Réalmont</text>
+                  <text x="383" y="282">Revel</text>
+                  <text x="483" y="302">Carcassonne (bastide St-Louis)</text>
+                  <text x="350" y="340">Mirepoix</text>
+                  <text x="60" y="135">Montréal (Gers)</text>
+                </g>
+              </svg>
+              <figcaption>Carte schématique de quelques bastides d'Occitanie (positions approximatives, échelle non respectée).</figcaption>
+            </figure>
+            <div class="tableau-wrap">
+              <table class="tableau">
+                <thead><tr><th>Bastide</th><th>Dpt</th><th>Fondation</th><th>Fondateur</th><th>À voir</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Montauban</strong></td><td>82</td><td>1144</td><td>Alphonse Jourdain, comte de Toulouse</td><td>Place Nationale à double couvert, pont Vieux</td></tr>
+                  <tr><td><strong>Cordes-sur-Ciel</strong></td><td>81</td><td>1222</td><td>Raymond VII de Toulouse</td><td>Maisons gothiques sculptées, halle sur colline</td></tr>
+                  <tr><td><strong>Castelnau-de-Montmiral</strong></td><td>81</td><td>1222</td><td>Raymond VII de Toulouse</td><td>Place à couverts, croix-reliquaire</td></tr>
+                  <tr><td><strong>Lisle-sur-Tarn</strong></td><td>81</td><td>v. 1230</td><td>Raymond VII de Toulouse</td><td>L'une des plus grandes places à arcades du Sud-Ouest</td></tr>
+                  <tr><td><strong>Bastide Saint-Louis</strong> (Carcassonne)</td><td>11</td><td>1247 – 1260</td><td>Louis IX</td><td>Plan en damier, place Carnot</td></tr>
+                  <tr><td><strong>Villefranche-de-Rouergue</strong></td><td>12</td><td>1252</td><td>Alphonse de Poitiers</td><td>Place Notre-Dame et collégiale, marché du jeudi</td></tr>
+                  <tr><td><strong>Montréal</strong></td><td>32</td><td>1255</td><td>Alphonse de Poitiers</td><td>Première bastide de Gascogne, villa gallo-romaine de Séviac à proximité</td></tr>
+                  <tr><td><strong>Réalmont</strong></td><td>81</td><td>1272</td><td>Sénéchal royal</td><td>Place à arcades</td></tr>
+                  <tr><td><strong>Fleurance</strong></td><td>32</td><td>1274</td><td>Eustache de Beaumarchais</td><td>Halle-mairie, vitraux d'Arnaut de Moles</td></tr>
+                  <tr><td><strong>Beaumont-de-Lomagne</strong></td><td>82</td><td>1276</td><td>Paréage roi / abbaye de Grandselve</td><td>Une des plus grandes halles du Midi, maison de Fermat</td></tr>
+                  <tr><td><strong>Mirande</strong></td><td>32</td><td>1281</td><td>Paréage roi / abbaye de Berdoues / comte d'Astarac</td><td>Damier presque parfait, cathédrale</td></tr>
+                  <tr><td><strong>Sauveterre-de-Rouergue</strong></td><td>12</td><td>1281</td><td>Sénéchal royal</td><td>Place à couverts intacte</td></tr>
+                  <tr><td><strong>Mirepoix</strong></td><td>09</td><td>1289</td><td>Guy III de Lévis</td><td>Couverts à piliers de bois et maisons à colombages</td></tr>
+                  <tr><td><strong>Grenade</strong></td><td>31</td><td>1290</td><td>Eustache de Beaumarchais / abbaye de Grandselve</td><td>Halle monumentale</td></tr>
+                  <tr><td><strong>Marciac</strong></td><td>32</td><td>1298</td><td>Paréage roi / abbaye de La Case-Dieu / comte de Pardiac</td><td>Vaste place, festival Jazz in Marciac</td></tr>
+                  <tr><td><strong>Revel</strong></td><td>31</td><td>1342</td><td>Philippe VI de Valois</td><td>Halle du XIV<sup>e</sup> siècle à beffroi</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="tableau-legende">Les dates de fondation varient selon les sources (date du paréage, de la charte ou du peuplement) ; elles sont données à titre indicatif.</p>
+          </section>
+
+          <!-- ═══ FRISE ═══ -->
+          <section class="section" id="frise">
+            <h2 class="section-titre"><div class="section-titre-icon">🗓️</div>Frise chronologique</h2>
+            <div class="frise">
+              <div class="frise-periode">Les précurseurs</div>
+              <div class="frise-item"><span class="frise-date">XI<sup>e</sup> – XII<sup>e</sup> s.</span> <span class="frise-texte">— Castelnaux et sauvetés : premiers villages créés autour d'un château ou d'une église.</span></div>
+              <div class="frise-item majeur"><span class="frise-date">1144</span> <span class="frise-texte">— Fondation de Montauban.</span></div>
+              <div class="frise-periode">Après la croisade</div>
+              <div class="frise-item"><span class="frise-date">1209 – 1229</span> <span class="frise-texte">— Croisade contre les Albigeois.</span></div>
+              <div class="frise-item majeur"><span class="frise-date">1222</span> <span class="frise-texte">— Raymond VII fonde Cordes et Castelnau-de-Montmiral.</span></div>
+              <div class="frise-item"><span class="frise-date">1229</span> <span class="frise-texte">— Traité de Meaux-Paris.</span></div>
+              <div class="frise-item"><span class="frise-date">1247 – 1260</span> <span class="frise-texte">— Bastide Saint-Louis de Carcassonne.</span></div>
+              <div class="frise-periode">L'âge d'or</div>
+              <div class="frise-item majeur"><span class="frise-date">1249 – 1271</span> <span class="frise-texte">— Alphonse de Poitiers, comte de Toulouse, multiplie les fondations.</span></div>
+              <div class="frise-item"><span class="frise-date">1252</span> <span class="frise-texte">— Villefranche-de-Rouergue.</span></div>
+              <div class="frise-item"><span class="frise-date">1271</span> <span class="frise-texte">— Le comté de Toulouse entre dans le domaine royal.</span></div>
+              <div class="frise-item"><span class="frise-date">1274 – 1298</span> <span class="frise-texte">— Fleurance, Beaumont, Mirande, Grenade, Marciac.</span></div>
+              <div class="frise-item"><span class="frise-date">1289</span> <span class="frise-texte">— Reconstruction de Mirepoix après la crue de 1279.</span></div>
+              <div class="frise-periode">La fin</div>
+              <div class="frise-item"><span class="frise-date">1337</span> <span class="frise-texte">— Début de la guerre de Cent Ans ; les bastides se fortifient.</span></div>
+              <div class="frise-item"><span class="frise-date">1342</span> <span class="frise-texte">— Fondation de Revel.</span></div>
+              <div class="frise-item majeur"><span class="frise-date">1348</span> <span class="frise-texte">— Peste noire.</span></div>
+              <div class="frise-item"><span class="frise-date">1355</span> <span class="frise-texte">— Chevauchée du Prince Noir jusqu'à Narbonne.</span></div>
+              <div class="frise-periode">Aujourd'hui</div>
+              <div class="frise-item"><span class="frise-date">1978</span> <span class="frise-texte">— Premier festival Jazz in Marciac.</span></div>
+              <div class="frise-item"><span class="frise-date">2014</span> <span class="frise-texte">— Cordes-sur-Ciel élue « village préféré des Français ».</span></div>
+            </div>
+          </section>
+
+          <!-- ═══ IDÉES REÇUES ═══ -->
+          <section class="section" id="mythes">
+            <h2 class="section-titre"><div class="section-titre-icon">🔎</div>Idées reçues</h2>
+            <div class="mythe"><strong>« Les bastides sont des villes fortifiées. »</strong><br><span class="verdict nuance">À nuancer</span><br>Beaucoup sont nées ouvertes ; les remparts datent souvent de la guerre de Cent Ans, et certaines n'en ont jamais eu.</div>
+            <div class="mythe"><strong>« Toutes les bastides ont un plan en damier parfait. »</strong><br><span class="verdict faux">Faux</span><br>Le plan s'adapte au terrain : Cordes ou Najac s'étirent sur une crête, d'autres forment un ovale ou un triangle.</div>
+            <div class="mythe"><strong>« Ce sont les Anglais qui ont inventé les bastides. »</strong><br><span class="verdict faux">Faux</span><br>Les rois d'Angleterre en ont fondé en Gascogne, mais les premières sont l'œuvre des comtes de Toulouse ; en Occitanie, la plupart sont capétiennes.</div>
+            <div class="mythe"><strong>« Les cornières servaient à défendre la place. »</strong><br><span class="verdict faux">Faux</span><br>Elles abritaient le commerce : boutiques, étals et passants, à l'ombre l'été et au sec l'hiver.</div>
+          </section>
+
+          <!-- ═══ PARCOURS ═══ -->
+          <section class="section" id="parcours">
+            <h2 class="section-titre"><div class="section-titre-icon">🥾</div>Circuit conseillé : des bastides du Tarn au Gers</h2>
+            <div class="etapes-liste">
+              <div class="etape"><div class="etape-num">1</div><div class="etape-corps"><div class="etape-titre">Cordes-sur-Ciel</div><div class="etape-texte">Montée par les portes successives, maisons gothiques du Grand Veneur et du Grand Fauconnier, halle au sommet.</div></div></div>
+              <div class="etape"><div class="etape-num">2</div><div class="etape-corps"><div class="etape-titre">Castelnau-de-Montmiral et Lisle-sur-Tarn</div><div class="etape-texte">Deux places à couverts dans le vignoble de Gaillac.</div></div></div>
+              <div class="etape"><div class="etape-num">3</div><div class="etape-corps"><div class="etape-titre">Villefranche-de-Rouergue et Najac</div><div class="etape-texte">Marché du jeudi sur la place Notre-Dame, puis le village-rue et le château de Najac.</div></div></div>
+              <div class="etape"><div class="etape-num">4</div><div class="etape-corps"><div class="etape-titre">Montauban et Beaumont-de-Lomagne</div><div class="etape-texte">Place Nationale en brique rose, puis l'immense halle de Beaumont.</div></div></div>
+              <div class="etape"><div class="etape-num">5</div><div class="etape-corps"><div class="etape-titre">Gers : Fleurance, Mirande, Marciac</div><div class="etape-texte">Trois bastides de plaine au plan régulier, avec un passage par l'abbaye de Flaran, qui accueille des expositions.</div></div></div>
+            </div>
+          </section>
+
+          <!-- ═══ INFOS ═══ -->
+          <section class="section" id="infos-pratiques">
+            <h2 class="section-titre"><div class="section-titre-icon">ℹ️</div>Infos pratiques</h2>
+            <div class="vins-liste">
+              <div class="vin-item"><div class="vin-icon">🛒</div><div><div class="vin-nom">Jour de marché</div><div class="vin-desc">La meilleure façon de comprendre une bastide : venir le jour du marché, souvent fixé depuis le Moyen Âge.</div></div><div class="vin-badge">Hebdomadaire</div></div>
+              <div class="vin-item"><div class="vin-icon">🎷</div><div><div class="vin-nom">Festivals</div><div class="vin-desc">Jazz in Marciac (été), fête médiévale du Grand Fauconnier à Cordes (juillet).</div></div><div class="vin-badge">Été</div></div>
+              <div class="vin-item"><div class="vin-icon">🏛️</div><div><div class="vin-nom">Centre d'étude des bastides</div><div class="vin-desc">Installé à Villefranche-de-Rouergue, il propose documentation et visites.</div></div><div class="vin-badge">Aveyron</div></div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="produit-aside">
+          <div class="aside-card">
+            <div class="aside-card-header">📋 Carte d'identité</div>
+            <div class="aside-card-body">
+              <div class="aside-row"><span class="aside-label">Région</span><span class="aside-val">Occitanie</span></div>
+              <div class="aside-row"><span class="aside-label">Territoire</span><span class="aside-val">Gers · Tarn · Tarn-et-Garonne · Aveyron · Haute-Garonne · Ariège · Aude</span></div>
+              <div class="aside-row"><span class="aside-label">Période</span><span class="aside-val">1144 – 1373</span></div>
+              <div class="aside-row"><span class="aside-label">Catégorie</span><span class="aside-val">Urbanisme · Patrimoine</span></div>
+              <div class="aside-row"><span class="aside-label">Saison</span><span class="aside-val">Toute l'année, jours de marché</span></div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-card-header">🔢 En chiffres</div>
+            <div class="aside-card-body">
+              <div class="chiffres">
+                <div class="chiffre"><b>1144</b><span>Montauban, la pionnière</span></div>
+                <div class="chiffre"><b>1222</b><span>Cordes</span></div>
+                <div class="chiffre"><b>1250-1300</b><span>âge d'or des fondations</span></div>
+                <div class="chiffre"><b>centaines</b><span>de bastides dans le Sud-Ouest</span></div>
+                <div class="chiffre"><b>1342</b><span>Revel, l'une des dernières</span></div>
+                <div class="chiffre"><b>1348</b><span>la peste arrête tout</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-card-header">📚 Petit glossaire</div>
+            <div class="aside-card-body">
+              <dl class="glossaire">
+                <dt>Bastide</dt><dd>Ville neuve planifiée des XIII<sup>e</sup>-XIV<sup>e</sup> siècles.</dd>
+                <dt>Paréage</dt><dd>Contrat de cogestion entre deux seigneurs, souvent un prince et une abbaye.</dd>
+                <dt>Charte de coutumes</dt><dd>Texte fixant les droits et devoirs des habitants.</dd>
+                <dt>Cornières</dt><dd>Arcades entourant la place.</dd>
+                <dt>Ayral</dt><dd>Lot à bâtir attribué à chaque colon.</dd>
+                <dt>Consuls</dt><dd>Magistrats élus qui administrent la ville.</dd>
+                <dt>Bayle</dt><dd>Représentant du seigneur dans la bastide.</dd>
+                <dt>Castelnau / sauveté</dt><dd>Villages neufs plus anciens, groupés autour d'un château ou d'une église.</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="aside-card">
+            <div class="aside-card-header">📖 Pour aller plus loin</div>
+            <div class="aside-card-body" style="font-family: var(--font-corps); font-size: 13px; line-height: 1.6; color:#3A3028;">
+              • Charles Higounet, <em>Paysages et villages neufs du Moyen Âge</em><br>
+              • Centre d'étude des bastides, Villefranche-de-Rouergue
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../../commun/livre.js"></script>
+</body>
+</html>

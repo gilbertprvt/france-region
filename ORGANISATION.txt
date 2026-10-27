@@ -1,0 +1,20 @@
+ORGANISATION DU DOSSIER « france-region »
+==========================================
+
+  index.html        Page d'entrée (provisoire, une photo viendra plus tard) → bouton « Entrer »
+  france.html       La carte de France (l'ancien index) → un clic ouvre la bibliothèque d'une région
+  commun/           Les fichiers partagés par TOUT le site (on n'y touche qu'avec précaution)
+      site.css          la feuille de styles unique
+      regions.js        la liste des régions (+ réglage de l'outre-mer)
+      carte.js          le fonctionnement de la carte
+      bibliotheque.js   le fonctionnement des étagères
+      livre.js          le fonctionnement des livres (couverture, pages qui tournent)
+  regions/          Un dossier par région (18 dossiers, outre-mer compris)
+      occitanie/
+          bibliotheque.html     la bibliothèque de la région
+          liste-livres.js       la liste de ses livres  ← À MODIFIER à chaque nouveau livre
+          canal-du-midi.html    un livre (un fichier par livre)
+          images/couvertures/   les couvertures
+          LISEZ-MOI.txt         ce qu'on range dans le dossier
+
+Parcours : index.html → france.html → regions/<région>/bibliotheque.html → le livre

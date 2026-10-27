@@ -1,0 +1,21 @@
+DOSSIER DE LA RÉGION « Mayotte »
+================================
+
+Ce qu'on range ici :
+
+  bibliotheque.html     La page de la bibliothèque (déjà prête, ne pas modifier).
+  liste-livres.js       LA LISTE DES LIVRES : c'est ici qu'on ajoute chaque nouveau livre.
+  nom-du-livre.html     Les livres eux-mêmes : un fichier par livre, directement dans ce dossier.
+  images/couvertures/   Les images de couverture (une par livre).
+  images/nom-du-livre/  (si besoin) les photos utilisées à l'intérieur d'un livre.
+
+Pas de fichier CSS ni de script ici : ils sont tous dans le dossier « commun ».
+
+Pour ajouter un livre :
+  1. copier le fichier du livre dans ce dossier (ex. canal-du-midi.html) ;
+  2. mettre sa couverture dans images/couvertures/ ;
+  3. ajouter son bloc dans liste-livres.js.
+  Il apparaît alors sur les étagères et la carte de France compte un livre de plus.
+
+Conseil : des noms de fichiers sans espaces, sans accents, en minuscules,
+avec des tirets (ex. couverture-canal-du-midi.webp).
