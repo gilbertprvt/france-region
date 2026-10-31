@@ -47,7 +47,25 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "langue et culture",
     page: "provencal-langue-culture.html",
     couverture: "images/couvertures/provencal-langue-culture.webp",
-    couleur: "#EDC187" }
+    couleur: "#EDC187" },
+
+  { titre: "Le Festival de Cannes",
+    sousTitre: "la capitale du cinéma",
+    page: "festival-cannes.html",
+    couverture: "images/couvertures/festival-cannes.webp",
+    couleur: "#EDC188" },
+
+  { titre: "Les parfumeries de Grasse",
+    sousTitre: "de la fleur au parfum",
+    page: "parfumeries-grasse.html",
+    couverture: "images/couvertures/parfumeries-grasse.webp",
+    couleur: "#EBBD83" },
+
+  { titre: "La culture de l'olivier",
+    sousTitre: "de l'arbre à l'huile",
+    page: "culture-olivier.html",
+    couverture: "images/couvertures/culture-olivier.webp",
+    couleur: "#EDBF84" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
