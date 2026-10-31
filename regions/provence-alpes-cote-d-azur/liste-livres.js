@@ -65,7 +65,19 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "de l'arbre à l'huile",
     page: "culture-olivier.html",
     couverture: "images/couvertures/culture-olivier.webp",
-    couleur: "#EDBF84" }
+    couleur: "#EDBF84" },
+
+  { titre: "La culture de la lavande",
+    sousTitre: "des champs aux huiles essentielles",
+    page: "culture-lavande.html",
+    couverture: "images/couvertures/culture-lavande.webp",
+    couleur: "#ECBB81" },
+
+  { titre: "L'industrialisation de Marseille",
+    sousTitre: "et de l'étang de Berre",
+    page: "industrialisation-marseille-berre.html",
+    couverture: "images/couvertures/industrialisation-marseille-berre.webp",
+    couleur: "#ECBB81" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
