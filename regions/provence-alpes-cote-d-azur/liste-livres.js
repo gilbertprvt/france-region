@@ -83,7 +83,61 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "de Provence-Alpes-Côte d'Azur",
     page: "recettes-provence.html",
     couverture: "images/couvertures/recettes-provence.webp",
-    couleur: "#EBB87E" }
+    couleur: "#EBB87E" },
+
+  { titre: "La Provence à la loupe",
+    sousTitre: "géographie, habitants, économie",
+    page: "provence-a-la-loupe.html",
+    couverture: "images/couvertures/provence-a-la-loupe.webp",
+    couleur: "#E9B67C" },
+
+  { titre: "Marseille, histoire d'une ville",
+    sousTitre: "2 600 ans d'histoire",
+    page: "marseille-histoire.html",
+    couverture: "images/couvertures/marseille-histoire.webp",
+    couleur: "#E9AF73" },
+
+  { titre: "La Provence romaine",
+    sousTitre: "de Massalia à la fin de l'Empire",
+    page: "provence-romaine.html",
+    couverture: "images/couvertures/provence-romaine.webp",
+    couleur: "#E9B177" },
+
+  { titre: "Les Vaudois du Luberon",
+    sousTitre: "et les guerres de Religion",
+    page: "vaudois-luberon.html",
+    couverture: "images/couvertures/vaudois-luberon.webp",
+    couleur: "#F3B46A" },
+
+  { titre: "Les places fortes de Vauban",
+    sousTitre: "Briançon, Mont-Dauphin, Entrevaux, Toulon",
+    page: "vauban-places-fortes.html",
+    couverture: "images/couvertures/vauban-places-fortes.webp",
+    couleur: "#F4B76F" },
+
+  { titre: "La Résistance et le débarquement",
+    sousTitre: "de Provence, 1939-1945",
+    page: "resistance-debarquement.html",
+    couverture: "images/couvertures/resistance-debarquement.webp",
+    couleur: "#EBB57A" },
+
+  { titre: "Les vins de Provence",
+    sousTitre: "vignobles, cépages et appellations",
+    page: "vins-provence.html",
+    couverture: "images/couvertures/vins-provence.webp",
+    couleur: "#EAB378" },
+
+  { titre: "Les artisans de Provence",
+    sousTitre: "santons, faïences, poteries, verre",
+    page: "artisans-provence.html",
+    couverture: "images/couvertures/artisans-provence.webp",
+    couleur: "#F7BA74" },
+
+  { titre: "La transhumance et les bergers",
+    sousTitre: "de la Crau aux alpages",
+    page: "transhumance-bergers.html",
+    couverture: "images/couvertures/transhumance-bergers.webp",
+    couleur: "#E9AF74" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
