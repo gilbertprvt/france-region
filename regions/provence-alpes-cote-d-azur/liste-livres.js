@@ -77,7 +77,13 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "et de l'étang de Berre",
     page: "industrialisation-marseille-berre.html",
     couverture: "images/couvertures/industrialisation-marseille-berre.webp",
-    couleur: "#ECBB81" }
+    couleur: "#ECBB81" },
+
+  { titre: "Recettes salées ou sucrées",
+    sousTitre: "de Provence-Alpes-Côte d'Azur",
+    page: "recettes-provence.html",
+    couverture: "images/couvertures/recettes-provence.webp",
+    couleur: "#EBB87E" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
