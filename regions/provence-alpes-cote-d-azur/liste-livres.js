@@ -29,7 +29,25 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "de la terre aux pigments",
     page: "ocres-provence.html",
     couverture: "images/couvertures/ocres-provence.webp",
-    couleur: "#EEC48B" }
+    couleur: "#EEC48B" },
+
+  { titre: "Nice et la Savoie",
+    sousTitre: "de 1388 à 1860",
+    page: "nice-savoie.html",
+    couverture: "images/couvertures/nice-savoie.webp",
+    couleur: "#EBC188" },
+
+  { titre: "La papauté en Avignon",
+    sousTitre: "la Cité des papes",
+    page: "papaute-avignon.html",
+    couverture: "images/couvertures/papaute-avignon.webp",
+    couleur: "#EABF84" },
+
+  { titre: "Le provençal",
+    sousTitre: "langue et culture",
+    page: "provencal-langue-culture.html",
+    couverture: "images/couvertures/provencal-langue-culture.webp",
+    couleur: "#EDC187" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
