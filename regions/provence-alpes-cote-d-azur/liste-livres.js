@@ -13,11 +13,28 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("provence-alpes-cote-d-azur", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "La Camargue",
+    sousTitre: "traditions, élevage et pèlerinages",
+    page: "camargue.html",
+    couverture: "images/couvertures/camargue.webp",
+    couleur: "#E9C38C" },
+
+  { titre: "Les chantiers navals de La Ciotat",
+    sousTitre: "des paquebots aux yachts",
+    page: "chantiers-navals-la-ciotat.html",
+    couverture: "images/couvertures/chantiers-navals-la-ciotat.webp",
+    couleur: "#ECC388" },
+
+  { titre: "Les ocres de Provence",
+    sousTitre: "de la terre aux pigments",
+    page: "ocres-provence.html",
+    couverture: "images/couvertures/ocres-provence.webp",
+    couleur: "#EEC48B" }
+
+  /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
-    couverture: "images/couvertures/couverture-nom-du-livre.webp",
-    theme: "Patrimoine" },
+    couverture: "images/couvertures/couverture-nom-du-livre.webp" },
   */
 ]);

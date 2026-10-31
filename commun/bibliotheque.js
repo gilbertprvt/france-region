@@ -47,6 +47,13 @@
     try { a.style.setProperty('--cuir', couleurCuir(img)); } catch (e) { /* page ouverte depuis l'ordinateur : couleur par défaut */ }
   }
 
+  /* Une couleur de cuir claire (ex. « #E9C38C ») demande un titre foncé sur le dos */
+  function estClair(c) {
+    var m = /^#([0-9a-f]{6})$/i.exec(c || ''); if (!m) return false;
+    var n = parseInt(m[1], 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    return (0.299 * r + 0.587 * g + 0.114 * b) > 165;
+  }
+
   /* ─── Un livre : son dos, sa couverture et son étiquette ─── */
   function creerLivre(l, rang) {
     var h = hachage(l.titre || String(rang));
@@ -71,6 +78,7 @@
     dt.className = 'biblio-dos-titre';
     dt.textContent = l.titre;
     dos.appendChild(dt);
+    if (estClair(couleur)) dos.classList.add('dos-clair');   /* cuir clair : titre foncé, lisible */
 
     /* la couverture, qui apparaît quand le livre sort de l'étagère */
     var face = document.createElement('span');
