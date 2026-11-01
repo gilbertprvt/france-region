@@ -137,7 +137,25 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "de la Crau aux alpages",
     page: "transhumance-bergers.html",
     couverture: "images/couvertures/transhumance-bergers.webp",
-    couleur: "#E9AF74" }
+    couleur: "#E9AF74" },
+
+  { titre: "Les Alpes du Sud et la nature",
+    sousTitre: "Mercantour, Verdon, Ventoux, Calanques",
+    page: "alpes-sud-nature.html",
+    couverture: "images/couvertures/alpes-sud-nature.webp",
+    couleur: "#E09D59" },
+
+  { titre: "Les peintres en Provence",
+    sousTitre: "Cézanne, Van Gogh, Picasso, Matisse, Chagall",
+    page: "peintres-provence.html",
+    couverture: "images/couvertures/peintres-provence.webp",
+    couleur: "#F6B568" },
+
+  { titre: "Toulon et la Marine",
+    sousTitre: "l'arsenal et le sabordage de 1942",
+    page: "toulon-marine.html",
+    couverture: "images/couvertures/toulon-marine.webp",
+    couleur: "#F9B96B" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
