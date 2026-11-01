@@ -197,6 +197,12 @@ AME.ajouterLivres("auvergne-rhone-alpes", [
     sousTitre: "Xavier Jouvin et la capitale du gant",
     page: "ganterie-grenoble.html",
     couverture: "images/couvertures/ganterie-grenoble.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Recettes sucrées et salées",
+    sousTitre: "d'Auvergne-Rhône-Alpes : 60 recettes",
+    page: "recettes-ara.html",
+    couverture: "images/couvertures/recettes-ara.webp",
     couleur: "#1D4A1F" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
