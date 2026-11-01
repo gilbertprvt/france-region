@@ -131,6 +131,42 @@ AME.ajouterLivres("auvergne-rhone-alpes", [
     sousTitre: "Beaujolais, côtes-du-rhône, Savoie",
     page: "vins-ara.html",
     couverture: "images/couvertures/vins-ara.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Lyon, de Lugdunum à aujourd'hui",
+    sousTitre: "deux mille ans d'histoire",
+    page: "lyon-lugdunum.html",
+    couverture: "images/couvertures/lyon-lugdunum.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Vercingétorix et les Arvernes",
+    sousTitre: "Gergovie et Alésia, 52 av. J.-C.",
+    page: "vercingetorix-arvernes.html",
+    couverture: "images/couvertures/vercingetorix-arvernes.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Les eaux minérales d'Auvergne",
+    sousTitre: "Vichy, Volvic et les villes d'eaux",
+    page: "eaux-minerales.html",
+    couverture: "images/couvertures/eaux-minerales.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Châtaigne et soie en Ardèche",
+    sousTitre: "l'arbre à pain et les moulinages",
+    page: "chataigne-soie-ardeche.html",
+    couverture: "images/couvertures/chataigne-soie-ardeche.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "La noix de Grenoble",
+    sousTitre: "le premier fruit protégé de France",
+    page: "noix-grenoble.html",
+    couverture: "images/couvertures/noix-grenoble.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Le nougat de Montélimar",
+    sousTitre: "miel, amandes et IGP",
+    page: "nougat-montelimar.html",
+    couverture: "images/couvertures/nougat-montelimar.webp",
     couleur: "#1D4A1F" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
