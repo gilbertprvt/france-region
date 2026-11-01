@@ -167,6 +167,36 @@ AME.ajouterLivres("auvergne-rhone-alpes", [
     sousTitre: "miel, amandes et IGP",
     page: "nougat-montelimar.html",
     couverture: "images/couvertures/nougat-montelimar.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Invasions et troubles du haut Moyen Âge",
+    sousTitre: "Burgondes, Sarrasins, Vikings, Hongrois",
+    page: "invasions-haut-moyen-age.html",
+    couverture: "images/couvertures/invasions-haut-moyen-age.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Les Dauphins et le Dauphiné",
+    sousTitre: "de 1349 à la Journée des Tuiles",
+    page: "dauphins-dauphine.html",
+    couverture: "images/couvertures/dauphins-dauphine.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "La Savoie, un État indépendant",
+    sousTitre: "comtes, ducs et rois jusqu'en 1860",
+    page: "savoie-etat.html",
+    couverture: "images/couvertures/savoie-etat.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "La Résistance dans les Alpes",
+    sousTitre: "Jean Moulin, Glières, Vercors",
+    page: "resistance-alpes.html",
+    couverture: "images/couvertures/resistance-alpes.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "La ganterie grenobloise",
+    sousTitre: "Xavier Jouvin et la capitale du gant",
+    page: "ganterie-grenoble.html",
+    couverture: "images/couvertures/ganterie-grenoble.webp",
     couleur: "#1D4A1F" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
