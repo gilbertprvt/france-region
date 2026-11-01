@@ -155,7 +155,37 @@ AME.ajouterLivres("provence-alpes-cote-d-azur", [
     sousTitre: "l'arsenal et le sabordage de 1942",
     page: "toulon-marine.html",
     couverture: "images/couvertures/toulon-marine.webp",
-    couleur: "#F9B96B" }
+    couleur: "#F9B96B" },
+
+  { titre: "La Provence au Moyen Âge",
+    sousTitre: "comtes, roi René et abbayes",
+    page: "provence-moyen-age.html",
+    couverture: "images/couvertures/provence-moyen-age.webp",
+    couleur: "#F9BA6C" },
+
+  { titre: "Les écrivains de Provence",
+    sousTitre: "Mistral, Daudet, Giono, Pagnol, Bosco",
+    page: "ecrivains-provence.html",
+    couverture: "images/couvertures/ecrivains-provence.webp",
+    couleur: "#FAB763" },
+
+  { titre: "Noël et les traditions provençales",
+    sousTitre: "treize desserts, pastorales, pétanque",
+    page: "noel-traditions.html",
+    couverture: "images/couvertures/noel-traditions.webp",
+    couleur: "#FABA69" },
+
+  { titre: "Les produits du terroir",
+    sousTitre: "truffe, melon, fruits, miel, Banon",
+    page: "produits-terroir.html",
+    couverture: "images/couvertures/produits-terroir.webp",
+    couleur: "#FAB563" },
+
+  { titre: "Aix-en-Provence",
+    sousTitre: "ville d'art et de fontaines",
+    page: "aix-en-provence.html",
+    couverture: "images/couvertures/aix-en-provence.webp",
+    couleur: "#F9B866" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
