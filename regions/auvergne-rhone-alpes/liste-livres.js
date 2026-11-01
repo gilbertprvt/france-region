@@ -13,11 +13,22 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("auvergne-rhone-alpes", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "Les canuts de Lyon",
+    sousTitre: "la soie et les révoltes ouvrières",
+    page: "canuts-lyon.html",
+    couverture: "images/couvertures/canuts-lyon.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Les volcans d'Auvergne",
+    sousTitre: "chaîne des Puys, Sancy, Cantal",
+    page: "volcans-auvergne.html",
+    couverture: "images/couvertures/volcans-auvergne.webp",
+    couleur: "#1D4A1F" }
+
+  /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
-    couverture: "images/couvertures/couverture-nom-du-livre.webp",
-    theme: "Patrimoine" },
+    couverture: "images/couvertures/couverture-nom-du-livre.webp" },
   */
 ]);
