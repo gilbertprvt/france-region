@@ -13,11 +13,58 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("corse", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "La Corse pisane et ses églises romanes",
+    sousTitre: "1077-1284",
+    page: "corse-pisane.html",
+    couverture: "images/couvertures/corse-pisane.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "La bataille de la Meloria",
+    sousTitre: "6 août 1284",
+    page: "meloria.html",
+    couverture: "images/couvertures/meloria.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Sambucucciu et la Terre des communes",
+    sousTitre: "la révolte de 1358",
+    page: "sambucucciu.html",
+    couverture: "images/couvertures/sambucucciu.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Gênes et la Corse",
+    sousTitre: "cinq siècles de domination, 1284-1768",
+    page: "genes-corse.html",
+    couverture: "images/couvertures/genes-corse.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les tours génoises",
+    sousTitre: "sentinelles contre les Barbaresques",
+    page: "tours-genoises.html",
+    couverture: "images/couvertures/tours-genoises.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Sampiero Corso",
+    sousTitre: "le héros de la résistance à Gênes",
+    page: "sampiero-corso.html",
+    couverture: "images/couvertures/sampiero-corso.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "La guerre d'indépendance et le roi Théodore",
+    sousTitre: "1729-1755",
+    page: "independance-theodore.html",
+    couverture: "images/couvertures/independance-theodore.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Pascal Paoli et la Corse indépendante",
+    sousTitre: "1755-1769",
+    page: "pascal-paoli.html",
+    couverture: "images/couvertures/pascal-paoli.webp",
+    couleur: "#1E6FA0" }
+
+  /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
-    couverture: "images/couvertures/couverture-nom-du-livre.webp",
-    theme: "Patrimoine" },
+    couverture: "images/couvertures/couverture-nom-du-livre.webp" },
   */
 ]);
