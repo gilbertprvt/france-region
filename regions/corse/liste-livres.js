@@ -83,6 +83,24 @@ AME.ajouterLivres("corse", [
     sousTitre: "de 1945 à nos jours",
     page: "corse-contemporaine.html",
     couverture: "images/couvertures/corse-contemporaine.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Vendetta et bandits d'honneur",
+    sousTitre: "le maquis, Mérimée et « Colomba »",
+    page: "vendetta-bandits.html",
+    couverture: "images/couvertures/vendetta-bandits.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "L'émigration corse",
+    sousTitre: "du village au continent et à l'empire",
+    page: "emigration-corse.html",
+    couverture: "images/couvertures/emigration-corse.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "La langue et le chant corses",
+    sousTitre: "paghjella, confréries, Riacquistu",
+    page: "langue-chant-corses.html",
+    couverture: "images/couvertures/langue-chant-corses.webp",
     couleur: "#1E6FA0" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
