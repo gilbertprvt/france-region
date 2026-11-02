@@ -59,6 +59,30 @@ AME.ajouterLivres("corse", [
     sousTitre: "1755-1769",
     page: "pascal-paoli.html",
     couverture: "images/couvertures/pascal-paoli.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Napoléon et la Corse",
+    sousTitre: "Ajaccio et la famille Bonaparte",
+    page: "napoleon-corse.html",
+    couverture: "images/couvertures/napoleon-corse.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Le royaume anglo-corse",
+    sousTitre: "1794-1796",
+    page: "royaume-anglo-corse.html",
+    couverture: "images/couvertures/royaume-anglo-corse.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "La Corse dans les guerres mondiales",
+    sousTitre: "1914-1918 et 1939-1945",
+    page: "corse-guerres-mondiales.html",
+    couverture: "images/couvertures/corse-guerres-mondiales.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "La Corse contemporaine",
+    sousTitre: "de 1945 à nos jours",
+    page: "corse-contemporaine.html",
+    couverture: "images/couvertures/corse-contemporaine.webp",
     couleur: "#1E6FA0" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
