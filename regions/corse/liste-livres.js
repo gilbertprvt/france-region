@@ -101,6 +101,12 @@ AME.ajouterLivres("corse", [
     sousTitre: "paghjella, confréries, Riacquistu",
     page: "langue-chant-corses.html",
     couverture: "images/couvertures/langue-chant-corses.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Recettes salées et sucrées",
+    sousTitre: "de Corse : 60 recettes",
+    page: "recettes-corse.html",
+    couverture: "images/couvertures/recettes-corse.webp",
     couleur: "#1E6FA0" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
