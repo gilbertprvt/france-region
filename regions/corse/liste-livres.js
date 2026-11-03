@@ -127,6 +127,30 @@ AME.ajouterLivres("corse", [
     couverture: "images/couvertures/oliveraies-balagne.webp",
     couleur: "#1E6FA0" },
 
+  { titre: "La châtaigne, arbre à pain",
+    sousTitre: "de la Castagniccia",
+    page: "chataigne-castagniccia.html",
+    couverture: "images/couvertures/chataigne-castagniccia.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Le pastoralisme et le brocciu",
+    sousTitre: "bergers, transhumance, fromages",
+    page: "pastoralisme-brocciu.html",
+    couverture: "images/couvertures/pastoralisme-brocciu.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les vins de Corse",
+    sousTitre: "du phylloxéra à Patrimonio",
+    page: "vins-corse.html",
+    couverture: "images/couvertures/vins-corse.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les chemins de fer de Corse",
+    sousTitre: "le Trinichellu et le viaduc du Vecchio",
+    page: "chemins-de-fer-corse.html",
+    couverture: "images/couvertures/chemins-de-fer-corse.webp",
+    couleur: "#1E6FA0" },
+
   { titre: "La Corse à la loupe",
     sousTitre: "administration, économie, nature et patrimoine",
     page: "corse-info.html",
