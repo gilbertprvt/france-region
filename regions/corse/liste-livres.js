@@ -103,6 +103,12 @@ AME.ajouterLivres("corse", [
     couverture: "images/couvertures/langue-chant-corses.webp",
     couleur: "#1E6FA0" },
 
+  { titre: "La Corse à la loupe",
+    sousTitre: "administration, économie, nature et patrimoine",
+    page: "corse-info.html",
+    couverture: "images/couvertures/corse-info.webp",
+    couleur: "#1E6FA0" },
+
   { titre: "Recettes salées et sucrées",
     sousTitre: "de Corse : 60 recettes",
     page: "recettes-corse.html",
