@@ -13,6 +13,12 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("corse", [
+  { titre: "La Corse antique",
+    sousTitre: "Grecs, Étrusques et Romains, d'Alalia à Aléria",
+    page: "corse-antique.html",
+    couverture: "images/couvertures/corse-antique.webp",
+    couleur: "#1E6FA0" },
+
   { titre: "La Corse pisane et ses églises romanes",
     sousTitre: "1077-1284",
     page: "corse-pisane.html",
@@ -185,6 +191,18 @@ AME.ajouterLivres("corse", [
     sousTitre: "le grand port du nord-est",
     page: "bastia.html",
     couverture: "images/couvertures/bastia.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Corte, capitale de Paoli",
+    sousTitre: "la citadelle, la constitution et l'université",
+    page: "corte-capitale-paoli.html",
+    couverture: "images/couvertures/corte-capitale-paoli.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Religion, confréries et fêtes",
+    sousTitre: "processions, Catenacciu et chants sacrés",
+    page: "religion-confreries-fetes.html",
+    couverture: "images/couvertures/religion-confreries-fetes.webp",
     couleur: "#1E6FA0" },
 
   { titre: "La Corse à la loupe",
