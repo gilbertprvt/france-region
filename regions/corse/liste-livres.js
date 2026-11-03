@@ -103,6 +103,30 @@ AME.ajouterLivres("corse", [
     couverture: "images/couvertures/langue-chant-corses.webp",
     couleur: "#1E6FA0" },
 
+  { titre: "La naissance du FLNC",
+    sousTitre: "d'Aléria (1975) à aujourd'hui",
+    page: "naissance-flnc.html",
+    couverture: "images/couvertures/naissance-flnc.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les rapatriés d'Afrique du Nord",
+    sousTitre: "en Corse, dans les années 1960",
+    page: "rapatries-afrique-du-nord.html",
+    couverture: "images/couvertures/rapatries-afrique-du-nord.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les agrumes de la plaine orientale",
+    sousTitre: "du cédrat à la clémentine IGP",
+    page: "agrumes-plaine-orientale.html",
+    couverture: "images/couvertures/agrumes-plaine-orientale.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Les oliveraies de Balagne",
+    sousTitre: "l'olivier, l'huile et la récolte sur filets",
+    page: "oliveraies-balagne.html",
+    couverture: "images/couvertures/oliveraies-balagne.webp",
+    couleur: "#1E6FA0" },
+
   { titre: "La Corse à la loupe",
     sousTitre: "administration, économie, nature et patrimoine",
     page: "corse-info.html",
