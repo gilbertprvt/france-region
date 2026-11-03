@@ -203,6 +203,12 @@ AME.ajouterLivres("auvergne-rhone-alpes", [
     sousTitre: "d'Auvergne-Rhône-Alpes : 60 recettes",
     page: "recettes-ara.html",
     couverture: "images/couvertures/recettes-ara.webp",
+    couleur: "#1D4A1F" },
+
+  { titre: "Auvergne-Rhône-Alpes à la loupe",
+    sousTitre: "institutions, économie, énergie, nature et patrimoine",
+    page: "auvergne-rhone-alpes-info.html",
+    couverture: "images/couvertures/auvergne-rhone-alpes-info.webp",
     couleur: "#1D4A1F" }
 
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
