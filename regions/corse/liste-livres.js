@@ -151,6 +151,42 @@ AME.ajouterLivres("corse", [
     couverture: "images/couvertures/chemins-de-fer-corse.webp",
     couleur: "#1E6FA0" },
 
+  { titre: "Mines et industries de Corse",
+    sousTitre: "l'amiante de Canari, le tanin, le cédrat et le corail",
+    page: "mines-industries.html",
+    couverture: "images/couvertures/mines-industries.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Le golfe de Porto et Scandola",
+    sousTitre: "un site du patrimoine mondial",
+    page: "golfe-porto-scandola.html",
+    couverture: "images/couvertures/golfe-porto-scandola.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Le Parc naturel régional et le GR20",
+    sousTitre: "montagnes, lacs, mouflons et gypaètes",
+    page: "parc-naturel-gr20.html",
+    couverture: "images/couvertures/parc-naturel-gr20.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Ajaccio, cité impériale",
+    sousTitre: "la ville natale de Napoléon",
+    page: "ajaccio.html",
+    couverture: "images/couvertures/ajaccio.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Bonifacio et les Bouches",
+    sousTitre: "la cité des falaises et sa réserve marine",
+    page: "bonifacio-bouches.html",
+    couverture: "images/couvertures/bonifacio-bouches.webp",
+    couleur: "#1E6FA0" },
+
+  { titre: "Bastia, la cité génoise",
+    sousTitre: "le grand port du nord-est",
+    page: "bastia.html",
+    couverture: "images/couvertures/bastia.webp",
+    couleur: "#1E6FA0" },
+
   { titre: "La Corse à la loupe",
     sousTitre: "administration, économie, nature et patrimoine",
     page: "corse-info.html",
