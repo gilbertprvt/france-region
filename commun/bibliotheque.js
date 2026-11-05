@@ -70,6 +70,7 @@
     a.style.setProperty('--lg', largeur + 'px');
     a.style.setProperty('--cuir', couleur);
     a.setAttribute('aria-label', 'Ouvrir le livre « ' + l.titre + ' »');
+    a.setAttribute('data-rang', rang);
 
     /* le dos, visible quand le livre est rangé */
     var dos = document.createElement('span');
@@ -163,14 +164,123 @@
 
   var aide = document.querySelector('.biblio-aide');
   if (aide && tactile) aide.textContent = 'Touchez un livre pour le sortir de l\u2019étagère, touchez-le encore pour l\u2019ouvrir.';
+  if (aide && livres.length) aide.textContent += ' Vous pouvez aussi choisir un titre dans le registre.';
   if (aide && !livres.length) aide.hidden = true;
 
+  /* ─── Le registre : la liste de tous les titres, à côté de l'étagère ───
+     Un clic sur un titre fait sortir le livre de l'étagère ; un clic sur sa
+     couverture (ou sur « Ouvrir ») l'ouvre.                                   */
+  var registre = null, listeReg = null, triAZ = false, recherche = '';
+  function sansAccent(t) { return (t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  function cleTri(t) { return sansAccent(t).replace(/^(la |le |les |l'|l’|un |une |des )/, ''); }
+  function construireRegistre() {
+    if (!livres.length) return;
+    var main = meuble.parentNode;
+    var salle = document.createElement('div');
+    salle.className = 'biblio-salle';
+    main.insertBefore(salle, meuble);
+    salle.appendChild(meuble);
+    main.classList.add('avec-registre');
+
+    registre = document.createElement('aside');
+    registre.className = 'biblio-registre';
+    registre.setAttribute('aria-label', 'Registre des titres');
+    var det = document.createElement('details');
+    det.open = !window.matchMedia('(max-width: 999px)').matches;
+    var som = document.createElement('summary');
+    som.innerHTML = '<span class="registre-titre">📜 Registre des titres</span><span class="registre-nb"></span>';
+    som.querySelector('.registre-nb').textContent = livres.length + (livres.length > 1 ? ' livres' : ' livre');
+    det.appendChild(som);
+
+    var champ = document.createElement('input');
+    champ.type = 'search'; champ.className = 'registre-cherche';
+    champ.placeholder = 'Chercher un titre…'; champ.setAttribute('aria-label', 'Chercher un titre');
+    champ.addEventListener('input', function () { recherche = sansAccent(champ.value.trim()); remplirRegistre(); });
+    det.appendChild(champ);
+
+    var tri = document.createElement('div');
+    tri.className = 'registre-tri';
+    [['📚 Étagère', false], ['🔤 A → Z', true]].forEach(function (o) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.textContent = o[0];
+      b.setAttribute('aria-pressed', String(o[1] === triAZ));
+      b.addEventListener('click', function () {
+        triAZ = o[1];
+        tri.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        remplirRegistre();
+      });
+      tri.appendChild(b);
+    });
+    det.appendChild(tri);
+
+    listeReg = document.createElement('ol');
+    listeReg.className = 'registre-liste';
+    det.appendChild(listeReg);
+    registre.appendChild(det);
+    salle.appendChild(registre);
+    remplirRegistre();
+  }
+  function remplirRegistre() {
+    listeReg.textContent = '';
+    var items = livres.map(function (l, i) { return { l: l, i: i }; });
+    if (recherche) items = items.filter(function (o) { return sansAccent(o.l.titre + ' ' + (o.l.sousTitre || '')).indexOf(recherche) >= 0; });
+    if (triAZ) items.sort(function (u, v) { return cleTri(u.l.titre).localeCompare(cleTri(v.l.titre), 'fr'); });
+    var theme = null;
+    items.forEach(function (o) {
+      if (!triAZ && (o.l.theme || '') !== theme) {
+        theme = o.l.theme || '';
+        if (theme) { var th = document.createElement('li'); th.className = 'registre-theme'; th.textContent = theme; listeReg.appendChild(th); }
+      }
+      var li = document.createElement('li');
+      li.className = 'registre-item';
+      li.setAttribute('data-rang', o.i);
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'registre-livre';
+      var n = document.createElement('span'); n.className = 'registre-num'; n.textContent = (o.i + 1) + '.';
+      var t = document.createElement('span'); t.className = 'registre-nom'; t.textContent = o.l.titre;
+      if (o.l.sousTitre) { var sm = document.createElement('small'); sm.textContent = o.l.sousTitre; t.appendChild(sm); }
+      b.appendChild(n); b.appendChild(t);
+      b.addEventListener('click', function () { montrerLivre(o.i); });
+      var ouv = document.createElement('a');
+      ouv.className = 'registre-ouvrir'; ouv.href = chemin(o.l.page); ouv.textContent = 'Ouvrir ›';
+      ouv.setAttribute('aria-label', 'Ouvrir le livre « ' + o.l.titre + ' »');
+      li.appendChild(b); li.appendChild(ouv);
+      listeReg.appendChild(li);
+    });
+    if (!items.length) {
+      var rien = document.createElement('li'); rien.className = 'registre-rien'; rien.textContent = 'Aucun titre ne correspond.';
+      listeReg.appendChild(rien);
+    }
+    marquerRegistre();
+  }
+  function marquerRegistre() {
+    if (!listeReg) return;
+    var r = actif ? actif.getAttribute('data-rang') : null;
+    listeReg.querySelectorAll('.registre-item').forEach(function (li) {
+      if (li.getAttribute('data-rang') === r) li.setAttribute('aria-current', 'true'); else li.removeAttribute('aria-current');
+    });
+  }
+  /* clic sur un titre du registre : le livre vient à l'écran et sort de l'étagère */
+  function montrerLivre(i) {
+    var a = meuble.querySelector('.biblio-livre[data-rang="' + i + '"]');
+    if (!a) return;
+    var r = a.getBoundingClientRect();
+    if (r.top < 60 || r.bottom > window.innerHeight - 30) {
+      var doux = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      a.scrollIntoView({ block: 'center', behavior: doux ? 'smooth' : 'auto' });
+    }
+    rentrer();
+    sortir(a);
+    epingle = true;
+  }
+
+  construireRegistre();
   ranger();
 
   /* ─── Sortir un livre de l'étagère ───
      Le script suit lui-même la souris : un livre sorti le reste tant que la souris
      est sur sa couverture, même si celle-ci passe devant les livres voisins.     */
-  var actif = null, minuteur = null;
+  var actif = null, minuteur = null, epingle = false;   /* épinglé : sorti depuis le registre */
 
   function nombre(a, nom) { return parseFloat(a.style.getPropertyValue(nom)) || 0; }
   /* décalage pour que la couverture reste dans le meuble */
@@ -208,11 +318,14 @@
     recentrer(a);
     a.classList.add('sorti');
     actif = a;
+    marquerRegistre();
   }
   function rentrer() {
     clearTimeout(minuteur);
     if (actif) actif.classList.remove('sorti');
     actif = null;
+    epingle = false;
+    marquerRegistre();
   }
   function rentrerBientot() { clearTimeout(minuteur); minuteur = setTimeout(rentrer, 160); }
   function cible(x, y) { return (actif && dans(zone(actif), x, y)) ? actif : livreSous(x, y); }
@@ -225,10 +338,11 @@
       var x = e.clientX, y = e.clientY;
       if (actif && dans(zone(actif), x, y)) return;       // on reste sur le livre sorti
       var a = livreSous(x, y);
-      if (a) sortir(a); else if (actif) rentrer();         // un autre dos : il sort ; ailleurs : on range
+      if (a) { epingle = false; sortir(a); }
+      else if (actif && !epingle) rentrer();               // un livre choisi dans le registre reste sorti         // un autre dos : il sort ; ailleurs : on range
     }, { passive: true });
-    document.documentElement.addEventListener('mouseleave', rentrer);
-    window.addEventListener('blur', rentrer);
+    document.documentElement.addEventListener('mouseleave', function () { if (!epingle) rentrer(); });
+    window.addEventListener('blur', function () { if (!epingle) rentrer(); });
   }
   /* Clic : ouvre le livre sorti (et pas le voisin caché derrière sa couverture).
      Sur téléphone : 1er appui = le livre sort, 2e appui = il s'ouvre. */
@@ -241,7 +355,7 @@
     window.location.href = a.href;
   }, true);
   document.addEventListener('click', function (e) {
-    if (actif && !meuble.contains(e.target)) rentrer();
+    if (actif && !meuble.contains(e.target) && !(registre && registre.contains(e.target))) rentrer();
   });
   /* Clavier : le livre qui a le focus sort de l'étagère (pas quand le focus vient d'un appui ou d'un clic) */
   var parPointeur = false;
@@ -252,10 +366,11 @@
     var a = e.target.closest && e.target.closest('.biblio-livre');
     if (a) sortir(a);
   });
-  meuble.addEventListener('focusout', function () { if (!parPointeur) rentrerBientot(); });
+  meuble.addEventListener('focusout', function () { if (!parPointeur && !epingle) rentrerBientot(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && actif) rentrer(); });
   var t = null, derniere = meuble.clientWidth;
   window.addEventListener('resize', function () {
     clearTimeout(t);
-    t = setTimeout(function () { if (meuble.clientWidth !== derniere) { derniere = meuble.clientWidth; ranger(); } }, 200);
+    t = setTimeout(function () { if (meuble.clientWidth !== derniere) { derniere = meuble.clientWidth; actif = null; epingle = false; ranger(); marquerRegistre(); } }, 200);
   });
 })();

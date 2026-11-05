@@ -2043,6 +2043,68 @@ body.mode-livre .produit-body { padding: 6px 0 10px; }
 .biblio-etiquette { margin-left: var(--decal, 0px); }
 
 @media (prefers-reduced-motion: reduce) { .biblio-face, .biblio-dos { transition: none; } }
+
+/* Le registre : la liste des titres, à côté de l'étagère (créé par bibliotheque.js) */
+.biblio.avec-registre { max-width: 1500px; }
+.biblio { overflow-x: clip; }   /* l'étiquette d'un livre au bord ne crée pas de défilement horizontal */
+.biblio-salle { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+.biblio-registre {
+  position: sticky; top: 16px; background: #FBF6EA; border: 1px solid #C9B48D; border-radius: 8px;
+  box-shadow: 0 10px 26px rgba(60,35,10,.18), inset 0 0 0 4px #F3E8CF; font-family: var(--font-corps);
+}
+.biblio-registre summary {
+  list-style: none; cursor: pointer; display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+  padding: 14px 16px 10px; border-bottom: 1px solid #E2D3B0;
+}
+.biblio-registre summary::-webkit-details-marker { display: none; }
+.registre-titre { font-family: var(--font-titre); font-weight: 700; color: #2C4A7C; font-size: calc(17px + var(--taille-plus)); }
+.registre-nb { font-style: italic; color: #8B7355; font-size: calc(12px + var(--taille-plus)); white-space: nowrap; }
+.biblio-registre summary::after { content: '▾'; color: #C8843A; margin-left: auto; padding-left: 6px; }
+.biblio-registre details:not([open]) summary::after { content: '▸'; }
+.biblio-registre details:not([open]) summary { border-bottom: 0; }
+.registre-cherche {
+  display: block; width: calc(100% - 28px); margin: 12px 14px 8px; padding: 8px 12px; box-sizing: border-box;
+  border: 1px solid #C9B48D; border-radius: 20px; background: white; color: #3A2A14;
+  font: inherit; font-size: calc(14px + var(--taille-plus));
+}
+.registre-cherche:focus { outline: 2px solid #C8843A; outline-offset: 1px; }
+.registre-tri { display: flex; gap: 6px; margin: 0 14px 10px; }
+.registre-tri button {
+  flex: 1; padding: 5px 8px; border-radius: 14px; border: 1px solid #C9B48D; background: transparent; cursor: pointer;
+  font: inherit; font-size: calc(12px + var(--taille-plus)); color: #6B4C1E;
+}
+.registre-tri button[aria-pressed="true"] { background: #2C4A7C; border-color: #2C4A7C; color: white; }
+.registre-liste {
+  list-style: none; margin: 0; padding: 4px 8px 12px; overflow-y: auto; max-height: calc(100vh - 230px);
+  scrollbar-width: thin; scrollbar-color: #C9B48D transparent;
+}
+.registre-theme {
+  margin: 10px 8px 4px; padding-bottom: 3px; border-bottom: 1px dotted #C9B48D;
+  font-family: var(--font-titre); font-style: italic; font-weight: 700; color: #8B5A2B; font-size: calc(13px + var(--taille-plus));
+}
+.registre-item { position: relative; display: flex; align-items: center; border-radius: 6px; border-left: 3px solid transparent; }
+.registre-item:hover { background: #F2E6CB; }
+.registre-item[aria-current="true"] { background: #F2E2BE; border-left-color: #C8843A; }
+.registre-livre {
+  flex: 1; min-width: 0; display: flex; gap: 8px; align-items: baseline; text-align: left;
+  padding: 7px 6px 7px 8px; border: 0; background: none; cursor: pointer; font: inherit; color: #3A2A14;
+}
+.registre-livre:focus-visible { outline: 2px solid #C8843A; outline-offset: -2px; border-radius: 6px; }
+.registre-num { color: #A08560; font-size: calc(11px + var(--taille-plus)); min-width: 22px; text-align: right; font-variant-numeric: tabular-nums; }
+.registre-nom { font-family: var(--font-titre); font-weight: 700; color: #2C4A7C; font-size: calc(14px + var(--taille-plus)); line-height: 1.25; }
+.registre-nom small { display: block; font-family: var(--font-corps); font-weight: 400; font-style: italic; color: #8B7355; font-size: calc(11px + var(--taille-plus)); }
+.registre-ouvrir {
+  display: none; flex-shrink: 0; margin-right: 6px; padding: 3px 10px; border-radius: 12px;
+  background: #C8843A; color: white; font-size: calc(12px + var(--taille-plus)); text-decoration: none; white-space: nowrap;
+}
+.registre-ouvrir:hover { background: #A86A26; }
+.registre-item[aria-current="true"] .registre-ouvrir { display: inline-block; }
+.registre-rien { padding: 12px; font-style: italic; color: #8B7355; text-align: center; }
+@media (max-width: 999px) {
+  .biblio-salle { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .biblio-registre { position: static; order: -1; }
+  .registre-liste { max-height: 55vh; }
+}
 @media (max-width: 640px) {
   .biblio-entete-corps { gap: 14px; }
   .biblio-silhouette { width: 64px; height: 64px; }
