@@ -22,24 +22,6 @@
   var CUIRS = ['#2C4A7C', '#8A2F2F', '#2F6655', '#9A5A22', '#5E4A8A', '#A07812', '#3B6680', '#8A4566', '#4F6E30', '#B0532E', '#24506B', '#6B6B2A'];
   var tactile = window.matchMedia('(hover: none)').matches;
 
-  /* Les sujets : une étiquette de couleur sur le dos, la même dans toutes les régions.
-     Chaque livre indique son sujet dans liste-livres.js (« sujet: "industrie" »). */
-  var SUJETS = {
-    'antiquite':    { court: 'Antiquité', nom: 'Préhistoire et Antiquité',      c: '#2F6FD0' },
-    'moyen-age':    { court: 'Moyen Âge', nom: 'Moyen Âge',                     c: '#8E1B2E' },
-    'moderne':      { court: 'XVIe-XVIIIe s.', nom: 'Époque moderne (XVIe-XVIIIe s.)', c: '#6A3FA0' },
-    'contemporain': { court: 'XIXe-XXe s.', nom: 'XIXe-XXe siècles et guerres',   c: '#66717E' },
-    'industrie':    { court: 'Industrie', nom: 'Industrie, métiers, transports', c: '#2E8B3E' },
-    'agriculture':  { court: 'Agriculture', nom: 'Agriculture, élevage, vins',    c: '#D4A017' },
-    'nature':       { court: 'Nature', nom: 'Nature, montagne, mer',         c: '#17A2A2' },
-    'villes':       { court: 'Villes', nom: 'Villes et patrimoine',          c: '#C8552B' },
-    'culture':      { court: 'Culture', nom: 'Culture, langue, religion, fêtes', c: '#D23F7A' },
-    'gastronomie':  { court: 'Gastronomie', nom: 'Gastronomie et recettes',       c: '#6B3A1E' },
-    'panorama':     { court: 'Vue d’ensemble', nom: 'Vue d’ensemble de la région',   c: '#F1E6C8' }
-  };
-  var ORDRE_SUJETS = Object.keys(SUJETS);
-  function sujetDe(l) { return SUJETS[l.sujet] ? l.sujet : null; }
-
   function hachage(t) { var h = 0; for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) >>> 0; return h; }
   function chemin(p) { return !p ? p : (p.indexOf('%') >= 0 ? p : encodeURI(p)); }
 
@@ -98,15 +80,6 @@
     dt.textContent = l.titre;
     dos.appendChild(dt);
     if (estClair(couleur)) dos.classList.add('dos-clair');   /* cuir clair : titre foncé, lisible */
-    var su = sujetDe(l);
-    if (su) {                                                /* étiquette de couleur du sujet */
-      var pas = document.createElement('span');
-      pas.className = 'biblio-sujet';
-      pas.style.setProperty('--sujet', SUJETS[su].c);
-      dos.appendChild(pas);
-      dos.classList.add('avec-sujet');
-      a.setAttribute('data-sujet', su);
-    }
 
     /* la couverture, qui apparaît quand le livre sort de l'étagère */
     var face = document.createElement('span');
@@ -133,7 +106,6 @@
     etiquette.className = 'biblio-etiquette';
     etiquette.textContent = l.titre;
     if (l.sousTitre) { var sm = document.createElement('small'); sm.textContent = l.sousTitre; etiquette.appendChild(sm); }
-    if (su) { etiquette.style.setProperty('--sujet', SUJETS[su].c); etiquette.classList.add('avec-sujet'); }
     a.appendChild(etiquette);
 
     return { el: a, largeurDos: epaisseur };
@@ -176,12 +148,6 @@
     }
     /* au moins deux planches, pour l'allure du meuble */
     while (meuble.children.length < 2) nouvellePlanche('');
-    if (typeof filtreSujet !== 'undefined' && filtreSujet) appliquerFiltre();
-  }
-  function appliquerFiltre() {
-    meuble.querySelectorAll('.biblio-livre').forEach(function (a) {
-      a.classList.toggle('hors-sujet', !!filtreSujet && a.getAttribute('data-sujet') !== filtreSujet);
-    });
   }
   function nouvellePlanche(theme) {
     var p = document.createElement('div');
@@ -204,7 +170,7 @@
   /* ─── Le registre : la liste de tous les titres, à côté de l'étagère ───
      Un clic sur un titre fait sortir le livre de l'étagère ; un clic sur sa
      couverture (ou sur « Ouvrir ») l'ouvre.                                   */
-  var registre = null, listeReg = null, triAZ = false, recherche = '', filtreSujet = null;
+  var registre = null, listeReg = null, triAZ = false, recherche = '';
   function sansAccent(t) { return (t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
   function cleTri(t) { return sansAccent(t).replace(/^(la |le |les |l'|l’|un |une |des )/, ''); }
   function construireRegistre() {
@@ -247,37 +213,6 @@
     });
     det.appendChild(tri);
 
-    /* les sujets présents dans cette bibliothèque : légende des couleurs et filtre */
-    var presents = ORDRE_SUJETS.filter(function (k) { return livres.some(function (l) { return sujetDe(l) === k; }); });
-    if (presents.length) {
-      var leg = document.createElement('div');
-      leg.className = 'registre-sujets';
-      leg.setAttribute('role', 'group');
-      leg.setAttribute('aria-label', 'Choisir un sujet');
-      presents.forEach(function (k) {
-        var n = livres.filter(function (l) { return sujetDe(l) === k; }).length;
-        var b = document.createElement('button');
-        b.type = 'button'; b.className = 'registre-sujet';
-        b.style.setProperty('--sujet', SUJETS[k].c);
-        b.setAttribute('aria-pressed', 'false');
-        b.title = 'Afficher seulement : ' + SUJETS[k].nom;
-        b.innerHTML = '<i></i>';
-        b.appendChild(document.createTextNode(SUJETS[k].court + ' ' + n));
-        b.setAttribute('aria-label', SUJETS[k].nom + ', ' + n + (n > 1 ? ' livres' : ' livre'));
-        b.addEventListener('click', function () {
-          filtreSujet = filtreSujet === k ? null : k;
-          leg.querySelectorAll('.registre-sujet').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b && filtreSujet === k)); });
-          meuble.classList.toggle('filtre-sujet', !!filtreSujet);
-          meuble.querySelectorAll('.biblio-livre').forEach(function (a) {
-            a.classList.toggle('hors-sujet', !!filtreSujet && a.getAttribute('data-sujet') !== filtreSujet);
-          });
-          remplirRegistre();
-        });
-        leg.appendChild(b);
-      });
-      det.appendChild(leg);
-    }
-
     listeReg = document.createElement('ol');
     listeReg.className = 'registre-liste';
     det.appendChild(listeReg);
@@ -288,7 +223,6 @@
   function remplirRegistre() {
     listeReg.textContent = '';
     var items = livres.map(function (l, i) { return { l: l, i: i }; });
-    if (filtreSujet) items = items.filter(function (o) { return sujetDe(o.l) === filtreSujet; });
     if (recherche) items = items.filter(function (o) { return sansAccent(o.l.titre + ' ' + (o.l.sousTitre || '')).indexOf(recherche) >= 0; });
     if (triAZ) items.sort(function (u, v) { return cleTri(u.l.titre).localeCompare(cleTri(v.l.titre), 'fr'); });
     var theme = null;
@@ -303,8 +237,6 @@
       var b = document.createElement('button');
       b.type = 'button'; b.className = 'registre-livre';
       var n = document.createElement('span'); n.className = 'registre-num'; n.textContent = (o.i + 1) + '.';
-      var su = sujetDe(o.l);
-      if (su) { li.style.setProperty('--sujet', SUJETS[su].c); li.classList.add('avec-sujet'); li.title = SUJETS[su].nom; }
       var t = document.createElement('span'); t.className = 'registre-nom'; t.textContent = o.l.titre;
       if (o.l.sousTitre) { var sm = document.createElement('small'); sm.textContent = o.l.sousTitre; t.appendChild(sm); }
       b.appendChild(n); b.appendChild(t);
