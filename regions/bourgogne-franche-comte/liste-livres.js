@@ -43,6 +43,48 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/peugeot-sochaux.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "La Confrérie des Chevaliers du Tastevin",
+    sousTitre: "les chevaliers du vin de Bourgogne",
+    page: "confrerie-tastevin.html",
+    couverture: "images/couvertures/confrerie-tastevin.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "La faïence de Nevers",
+    sousTitre: "quatre siècles d'art au bord de la Loire",
+    page: "faience-nevers.html",
+    couverture: "images/couvertures/faience-nevers.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Le massif du Jura",
+    sousTitre: "forêts, lacs, comté et ski de fond",
+    page: "massif-jura.html",
+    couverture: "images/couvertures/massif-jura.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "La Compagnie des mines de Blanzy",
+    sousTitre: "le pays noir de Montceau-les-Mines",
+    page: "mines-blanzy.html",
+    couverture: "images/couvertures/mines-blanzy.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Saint-Claude, capitale de la pipe",
+    sousTitre: "la pipe en bruyère et le diamant",
+    page: "pipe-saint-claude.html",
+    couverture: "images/couvertures/pipe-saint-claude.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Le siège de Belfort",
+    sousTitre: "103 jours de résistance, 1870-1871",
+    page: "siege-belfort.html",
+    couverture: "images/couvertures/siege-belfort.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Le traité de Nimègue",
+    sousTitre: "la Franche-Comté devient française (1678)",
+    page: "traite-nimegue.html",
+    couverture: "images/couvertures/traite-nimegue.webp",
+    couleur: "#E8D7B2" },
+
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
