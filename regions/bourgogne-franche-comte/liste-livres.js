@@ -85,6 +85,18 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/traite-nimegue.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Philippe le Hardi",
+    sousTitre: "le premier des grands ducs (1342-1404)",
+    page: "philippe-le-hardi.html",
+    couverture: "images/couvertures/philippe-le-hardi.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Le traité de Verdun",
+    sousTitre: "843 : le partage de l'empire de Charlemagne",
+    page: "traite-verdun.html",
+    couverture: "images/couvertures/traite-verdun.webp",
+    couleur: "#E8D7B2" },
+
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
