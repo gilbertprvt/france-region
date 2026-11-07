@@ -109,6 +109,24 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/ducs-de-bourgogne.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Les grands canaux de Bourgogne-Franche-Comté",
+    sousTitre: "écluses, voûte de Pouilly et chemins de halage",
+    page: "canaux-bfc.html",
+    couverture: "images/couvertures/canaux-bfc.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Les salines de Franche-Comté",
+    sousTitre: "de Salins-les-Bains à Arc-et-Senans",
+    page: "salines-franche-comte.html",
+    couverture: "images/couvertures/salines-franche-comte.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Le Territoire de Belfort",
+    sousTitre: "de l'Alsace au 90e département (1871-1922)",
+    page: "territoire-de-belfort.html",
+    couverture: "images/couvertures/territoire-de-belfort.webp",
+    couleur: "#E8D7B2" },
+
   { titre: "Recettes sucrées et salées",
     sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
     page: "recettes-bfc.html",
