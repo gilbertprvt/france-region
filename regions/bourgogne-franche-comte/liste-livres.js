@@ -97,6 +97,18 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/traite-verdun.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "1870-1871 : Belfort, la forteresse qui résista",
+    sousTitre: "la guerre franco-prussienne dans la région",
+    page: "guerre-1870-belfort.html",
+    couverture: "images/couvertures/guerre-1870-belfort.webp",
+    couleur: "#E8D7B2" },
+
+  { titre: "Les ducs de Bourgogne",
+    sousTitre: "de la gloire à la chute (1363-1493)",
+    page: "ducs-de-bourgogne.html",
+    couverture: "images/couvertures/ducs-de-bourgogne.webp",
+    couleur: "#E8D7B2" },
+
   { titre: "Recettes sucrées et salées",
     sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
     page: "recettes-bfc.html",
