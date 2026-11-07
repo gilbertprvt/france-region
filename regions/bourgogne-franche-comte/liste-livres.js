@@ -97,6 +97,12 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/traite-verdun.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "La Bourgogne-Franche-Comté à la loupe",
+    sousTitre: "la région en chiffres, cartes et repères",
+    page: "bourgogne-franche-comte-info.html",
+    couverture: "images/couvertures/bourgogne-franche-comte-info.webp",
+    couleur: "#E8D7B2" },
+
   /* Modèle à recopier pour un nouveau livre (mettre une virgule après le livre précédent) :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
