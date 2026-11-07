@@ -13,7 +13,9 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("grand-est", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "Le Grand Est à la loupe", sousTitre: "La région en chiffres, en cartes et en images", page: "grand-est-info.html", couverture: "images/couvertures/grand-est-info.webp", couleur: "#C27A3A" },
+  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes du Grand Est, avec leurs boissons", page: "recettes-grand-est.html", couverture: "images/couvertures/recettes-grand-est.webp", couleur: "#C27A3A" },
+  /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
