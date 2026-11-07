@@ -1,0 +1,24 @@
+{
+  "name": "Bibliothèque des régions de France",
+  "short_name": "Régions",
+  "description": "La carte de France et la bibliothèque de chaque région.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F7F3EC",
+  "theme_color": "#2C4A7C",
+  "icons": [
+    {
+      "src": "icone-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icone-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
