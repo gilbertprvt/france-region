@@ -127,6 +127,12 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/territoire-de-belfort.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Les fruitières et les grands fromages de Franche-Comté",
+    sousTitre: "comté, morbier, mont-d'or… et La Vache qui rit",
+    page: "fruitieres-fromages.html",
+    couverture: "images/couvertures/fruitieres-fromages.webp",
+    couleur: "#E8D7B2" },
+
   { titre: "Recettes sucrées et salées",
     sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
     page: "recettes-bfc.html",
