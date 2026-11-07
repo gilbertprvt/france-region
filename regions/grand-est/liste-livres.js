@@ -23,6 +23,11 @@ AME.ajouterLivres("grand-est", [
   { titre: "Les mines de fer et la sidérurgie lorraine", sousTitre: "La minette, les hauts fourneaux et les hommes", page: "mines-fer-siderurgie.html", couverture: "images/couvertures/mines-fer-siderurgie.webp", couleur: "#C27A3A" },
   { titre: "La Première Guerre mondiale", sousTitre: "Marne, Champagne, Argonne, Verdun, Vosges", page: "premiere-guerre-mondiale.html", couverture: "images/couvertures/premiere-guerre-mondiale.webp", couleur: "#C27A3A" },
   { titre: "La Seconde Guerre mondiale", sousTitre: "Annexion, Malgré-nous, Struthof et libération", page: "seconde-guerre-grand-est.html", couverture: "images/couvertures/seconde-guerre-grand-est.webp", couleur: "#C27A3A" },
+  { titre: "Les vins de Champagne et d'Alsace", sousTitre: "Cépages, bulles, grands crus et route des vins", page: "vins-champagne-alsace.html", couverture: "images/couvertures/vins-champagne-alsace.webp", couleur: "#C27A3A" },
+  { titre: "L'agriculture du Grand Est", sousTitre: "Céréales, betteraves, lait, mirabelles", page: "agriculture-grand-est.html", couverture: "images/couvertures/agriculture-grand-est.webp", couleur: "#C27A3A" },
+  { titre: "Les cristalleries, verreries et faïenceries", sousTitre: "Baccarat, Saint-Louis, Daum, Lunéville, Sarreguemines", page: "cristalleries-faienceries.html", couverture: "images/couvertures/cristalleries-faienceries.webp", couleur: "#C27A3A" },
+  { titre: "Le textile d'Alsace, des Vosges et de Champagne", sousTitre: "Mulhouse, Épinal, Troyes, Sedan", page: "textile-grand-est.html", couverture: "images/couvertures/textile-grand-est.webp", couleur: "#C27A3A" },
+  { titre: "Les mines de charbon et de potasse", sousTitre: "Moselle houillère et Alsace potassique", page: "charbon-potasse.html", couverture: "images/couvertures/charbon-potasse.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
