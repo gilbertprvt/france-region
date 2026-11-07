@@ -97,6 +97,12 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/traite-verdun.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Recettes sucrées et salées",
+    sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
+    page: "recettes-bfc.html",
+    couverture: "images/couvertures/recettes-bfc.webp",
+    couleur: "#E8D7B2" },
+
   { titre: "La Bourgogne-Franche-Comté à la loupe",
     sousTitre: "la région en chiffres, cartes et repères",
     page: "bourgogne-franche-comte-info.html",
