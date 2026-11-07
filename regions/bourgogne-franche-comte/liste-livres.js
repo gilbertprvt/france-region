@@ -133,6 +133,12 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/fruitieres-fromages.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Les trésors de Bourgogne-Franche-Comté",
+    sousTitre: "les sites du patrimoine mondial de l'UNESCO",
+    page: "tresors-unesco.html",
+    couverture: "images/couvertures/tresors-unesco.webp",
+    couleur: "#E8D7B2" },
+
   { titre: "Recettes sucrées et salées",
     sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
     page: "recettes-bfc.html",
