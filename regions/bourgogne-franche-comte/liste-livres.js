@@ -139,6 +139,10 @@ AME.ajouterLivres("bourgogne-franche-comte", [
     couverture: "images/couvertures/tresors-unesco.webp",
     couleur: "#E8D7B2" },
 
+  { titre: "Alésia, Bibracte et la Bourgogne gauloise", sousTitre: "Vix, les Éduens, le siège de 52 av. J.-C. et Autun", page: "alesia-bibracte.html", couverture: "images/couvertures/alesia-bibracte.webp", couleur: "#E8D7B2" },
+  { titre: "Cluny, Cîteaux et les grandes abbayes", sousTitre: "Moines bâtisseurs, saint Bernard, Fontenay et Vézelay", page: "cluny-citeaux.html", couverture: "images/couvertures/cluny-citeaux.webp", couleur: "#E8D7B2" },
+  { titre: "Le Creusot et les Schneider", sousTitre: "Fonderie royale, marteau-pilon et dynastie industrielle", page: "creusot-schneider.html", couverture: "images/couvertures/creusot-schneider.webp", couleur: "#E8D7B2" },
+  { titre: "Le vignoble de Bourgogne et les vins du Jura", sousTitre: "Climats, grands crus, savagnin et vin jaune", page: "vignoble-bourgogne-jura.html", couverture: "images/couvertures/vignoble-bourgogne-jura.webp", couleur: "#E8D7B2" },
   { titre: "Recettes sucrées et salées",
     sousTitre: "de Bourgogne-Franche-Comté : 60 recettes",
     page: "recettes-bfc.html",
