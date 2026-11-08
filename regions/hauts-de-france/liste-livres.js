@@ -33,6 +33,11 @@ AME.ajouterLivres("hauts-de-france", [
   { titre: "Louis XIV et les conquêtes du Nord", sousTitre: "Quand Lille, Douai et Valenciennes deviennent françaises", page: "louis-xiv-conquetes-nord.html", couverture: "images/couvertures/louis-xiv.webp", couleur: "#2A5C93" },
   { titre: "L'industrie textile de Roubaix et Tourcoing", sousTitre: "La laine, les usines et les courées", page: "textile-roubaix-tourcoing.html", couverture: "images/couvertures/textile.webp", couleur: "#2A5C93" },
   { titre: "La sidérurgie et la métallurgie", sousTitre: "Denain, la Sambre et Dunkerque", page: "siderurgie-metallurgie.html", couverture: "images/couvertures/siderurgie.webp", couleur: "#2A5C93" },
+  { titre: "Les peuples gaulois", sousTitre: "Bellovaques, Ambiens, Atrébates, Nerviens, Morins", page: "peuples-gaulois.html", couverture: "images/couvertures/gaulois.webp", couleur: "#2A5C93" },
+  { titre: "La conquête romaine", sousTitre: "César face aux peuples du Nord, 58-51 av. J.-C.", page: "conquete-romaine.html", couverture: "images/couvertures/conquete-romaine.webp", couleur: "#2A5C93" },
+  { titre: "La Gaule romaine et les invasions", sousTitre: "D'Amiens et Bavay à Clovis", page: "gaule-romaine-invasions.html", couverture: "images/couvertures/gaule-romaine.webp", couleur: "#2A5C93" },
+  { titre: "Les grandes cathédrales gothiques", sousTitre: "Amiens, Beauvais, Laon, Noyon, Soissons", page: "cathedrales-gothiques.html", couverture: "images/couvertures/cathedrales.webp", couleur: "#2A5C93" },
+  { titre: "Jeanne d'Arc à Compiègne", sousTitre: "Sa capture le 23 mai 1430", page: "jeanne-arc-compiegne.html", couverture: "images/couvertures/jeanne-compiegne.webp", couleur: "#2A5C93" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
