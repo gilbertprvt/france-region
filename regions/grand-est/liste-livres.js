@@ -34,6 +34,11 @@ AME.ajouterLivres("grand-est", [
   { titre: "L'Alsace industrielle", sousTitre: "Textile, mécanique, potasse, Bugatti, Peugeot", page: "alsace-industrielle.html", couverture: "images/couvertures/alsace-industrielle.webp", couleur: "#C27A3A" },
   { titre: "Histoire de la famille Schlumpf", sousTitre: "Des filatures au Musée national de l'Automobile", page: "famille-schlumpf.html", couverture: "images/couvertures/famille-schlumpf.webp", couleur: "#C27A3A" },
   { titre: "Les Vosges, montagnes, forêts et industries", sousTitre: "Ballons, lacs, bois, papier, thermes", page: "vosges-montagnes-industries.html", couverture: "images/couvertures/vosges-montagnes-industries.webp", couleur: "#C27A3A" },
+  { titre: "La construction européenne et le rôle de Strasbourg", sousTitre: "Conseil de l'Europe, Parlement européen, réconciliation", page: "construction-europeenne-strasbourg.html", couverture: "images/couvertures/construction-europeenne-strasbourg.webp", couleur: "#C27A3A" },
+  { titre: "L'École de Nancy et l'Art nouveau", sousTitre: "Gallé, Daum, Majorelle, Gruber", page: "ecole-de-nancy.html", couverture: "images/couvertures/ecole-de-nancy.webp", couleur: "#C27A3A" },
+  { titre: "La guerre franco-prussienne et la bataille de Sedan", sousTitre: "1870-1871", page: "guerre-1870-sedan.html", couverture: "images/couvertures/guerre-1870-sedan.webp", couleur: "#C27A3A" },
+  { titre: "L'annexion de l'Alsace-Moselle à l'Empire allemand", sousTitre: "Le Reichsland, 1871-1918", page: "annexion-alsace-moselle.html", couverture: "images/couvertures/annexion-alsace-moselle.webp", couleur: "#C27A3A" },
+  { titre: "La bataille de Verdun", sousTitre: "21 février-18 décembre 1916", page: "bataille-verdun.html", couverture: "images/couvertures/bataille-verdun.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
