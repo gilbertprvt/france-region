@@ -28,6 +28,12 @@ AME.ajouterLivres("grand-est", [
   { titre: "Les cristalleries, verreries et faïenceries", sousTitre: "Baccarat, Saint-Louis, Daum, Lunéville, Sarreguemines", page: "cristalleries-faienceries.html", couverture: "images/couvertures/cristalleries-faienceries.webp", couleur: "#C27A3A" },
   { titre: "Le textile d'Alsace, des Vosges et de Champagne", sousTitre: "Mulhouse, Épinal, Troyes, Sedan", page: "textile-grand-est.html", couverture: "images/couvertures/textile-grand-est.webp", couleur: "#C27A3A" },
   { titre: "Les mines de charbon et de potasse", sousTitre: "Moselle houillère et Alsace potassique", page: "charbon-potasse.html", couverture: "images/couvertures/charbon-potasse.webp", couleur: "#C27A3A" },
+  { titre: "Les grands noms nés dans le Grand Est", sousTitre: "De Jeanne d'Arc à Tomi Ungerer", page: "grands-noms-grand-est.html", couverture: "images/couvertures/grands-noms-grand-est.webp", couleur: "#C27A3A" },
+  { titre: "Les grandes maisons de champagne", sousTitre: "Ruinart, Moët, Clicquot, Pommery, Krug…", page: "maisons-champagne.html", couverture: "images/couvertures/maisons-champagne.webp", couleur: "#C27A3A" },
+  { titre: "La route des vins d'Alsace", sousTitre: "De Marlenheim à Thann", page: "route-des-vins-alsace.html", couverture: "images/couvertures/route-des-vins-alsace.webp", couleur: "#C27A3A" },
+  { titre: "L'Alsace industrielle", sousTitre: "Textile, mécanique, potasse, Bugatti, Peugeot", page: "alsace-industrielle.html", couverture: "images/couvertures/alsace-industrielle.webp", couleur: "#C27A3A" },
+  { titre: "Histoire de la famille Schlumpf", sousTitre: "Des filatures au Musée national de l'Automobile", page: "famille-schlumpf.html", couverture: "images/couvertures/famille-schlumpf.webp", couleur: "#C27A3A" },
+  { titre: "Les Vosges, montagnes, forêts et industries", sousTitre: "Ballons, lacs, bois, papier, thermes", page: "vosges-montagnes-industries.html", couverture: "images/couvertures/vosges-montagnes-industries.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
