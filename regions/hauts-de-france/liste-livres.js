@@ -38,6 +38,10 @@ AME.ajouterLivres("hauts-de-france", [
   { titre: "La Gaule romaine et les invasions", sousTitre: "D'Amiens et Bavay à Clovis", page: "gaule-romaine-invasions.html", couverture: "images/couvertures/gaule-romaine.webp", couleur: "#2A5C93" },
   { titre: "Les grandes cathédrales gothiques", sousTitre: "Amiens, Beauvais, Laon, Noyon, Soissons", page: "cathedrales-gothiques.html", couverture: "images/couvertures/cathedrales.webp", couleur: "#2A5C93" },
   { titre: "Jeanne d'Arc à Compiègne", sousTitre: "Sa capture le 23 mai 1430", page: "jeanne-arc-compiegne.html", couverture: "images/couvertures/jeanne-compiegne.webp", couleur: "#2A5C93" },
+  { titre: "Les invasions vikings", sousTitre: "Les raids sur la Somme et l'Escaut, IXe siècle", page: "invasions-vikings.html", couverture: "images/couvertures/vikings.webp", couleur: "#2A5C93" },
+  { titre: "Les abbayes du Nord et de Picardie", sousTitre: "Saint-Riquier, Corbie, Saint-Amand, Vaucelles", page: "abbayes-nord-picardie.html", couverture: "images/couvertures/abbayes.webp", couleur: "#2A5C93" },
+  { titre: "La guerre de Succession d'Espagne", sousTitre: "Le siège de Lille, Malplaquet et Denain", page: "succession-espagne-siege-lille.html", couverture: "images/couvertures/succession-espagne.webp", couleur: "#2A5C93" },
+  { titre: "L'Art déco dans les villes reconstruites", sousTitre: "Saint-Quentin, Béthune, Lens après 1918", page: "art-deco-villes-reconstruites.html", couverture: "images/couvertures/art-deco.webp", couleur: "#2A5C93" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
