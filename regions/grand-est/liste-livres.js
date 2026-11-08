@@ -39,6 +39,11 @@ AME.ajouterLivres("grand-est", [
   { titre: "La guerre franco-prussienne et la bataille de Sedan", sousTitre: "1870-1871", page: "guerre-1870-sedan.html", couverture: "images/couvertures/guerre-1870-sedan.webp", couleur: "#C27A3A" },
   { titre: "L'annexion de l'Alsace-Moselle à l'Empire allemand", sousTitre: "Le Reichsland, 1871-1918", page: "annexion-alsace-moselle.html", couverture: "images/couvertures/annexion-alsace-moselle.webp", couleur: "#C27A3A" },
   { titre: "La bataille de Verdun", sousTitre: "21 février-18 décembre 1916", page: "bataille-verdun.html", couverture: "images/couvertures/bataille-verdun.webp", couleur: "#C27A3A" },
+  { titre: "Les peuples gaulois du Grand Est", sousTitre: "Rèmes, Médiomatriques, Leuques, Triboques", page: "peuples-gaulois.html", couverture: "images/couvertures/peuples-gaulois.webp", couleur: "#C27A3A" },
+  { titre: "Clovis, Reims et le baptême des Francs", sousTitre: "Vers 496-508", page: "clovis-bapteme-reims.html", couverture: "images/couvertures/clovis-bapteme-reims.webp", couleur: "#C27A3A" },
+  { titre: "La naissance de la Lorraine médiévale", sousTitre: "De la Lotharingie à Ferry III", page: "lorraine-medievale.html", couverture: "images/couvertures/lorraine-medievale.webp", couleur: "#C27A3A" },
+  { titre: "Jeanne d'Arc et le sacre de Charles VII à Reims", sousTitre: "De Domrémy à Reims, 1429", page: "jeanne-arc-sacre-reims.html", couverture: "images/couvertures/jeanne-arc-sacre-reims.webp", couleur: "#C27A3A" },
+  { titre: "La Réforme protestante en Alsace", sousTitre: "Bucer, Calvin, Sturm et le simultaneum", page: "reforme-alsace.html", couverture: "images/couvertures/reforme-alsace.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
