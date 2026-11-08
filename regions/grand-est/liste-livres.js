@@ -47,6 +47,8 @@ AME.ajouterLivres("grand-est", [
   { titre: "Metz", sousTitre: "La ville jaune, de Divodurum au Centre Pompidou", page: "metz.html", couverture: "images/couvertures/metz.webp", couleur: "#C27A3A" },
   { titre: "Troyes et les foires de Champagne", sousTitre: "Foires médiévales, traité de 1420, pans de bois", page: "troyes-foires-champagne.html", couverture: "images/couvertures/troyes-foires-champagne.webp", couleur: "#C27A3A" },
   { titre: "Les Ardennes", sousTitre: "Forêt, Meuse, Sedan, Charleville et marionnettes", page: "ardennes.html", couverture: "images/couvertures/ardennes.webp", couleur: "#C27A3A" },
+  { titre: "Mulhouse et Colmar", sousTitre: "Cité du Train, Petite Venise, retable d'Issenheim", page: "mulhouse-colmar.html", couverture: "images/couvertures/mulhouse-colmar.webp", couleur: "#C27A3A" },
+  { titre: "Traditions et fêtes du Grand Est", sousTitre: "Saint Nicolas, Noël, bredele, carnaval, cigogne", page: "traditions-fetes.html", couverture: "images/couvertures/traditions-fetes.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
