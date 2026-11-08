@@ -44,6 +44,9 @@ AME.ajouterLivres("grand-est", [
   { titre: "La naissance de la Lorraine médiévale", sousTitre: "De la Lotharingie à Ferry III", page: "lorraine-medievale.html", couverture: "images/couvertures/lorraine-medievale.webp", couleur: "#C27A3A" },
   { titre: "Jeanne d'Arc et le sacre de Charles VII à Reims", sousTitre: "De Domrémy à Reims, 1429", page: "jeanne-arc-sacre-reims.html", couverture: "images/couvertures/jeanne-arc-sacre-reims.webp", couleur: "#C27A3A" },
   { titre: "La Réforme protestante en Alsace", sousTitre: "Bucer, Calvin, Sturm et le simultaneum", page: "reforme-alsace.html", couverture: "images/couvertures/reforme-alsace.webp", couleur: "#C27A3A" },
+  { titre: "Metz", sousTitre: "La ville jaune, de Divodurum au Centre Pompidou", page: "metz.html", couverture: "images/couvertures/metz.webp", couleur: "#C27A3A" },
+  { titre: "Troyes et les foires de Champagne", sousTitre: "Foires médiévales, traité de 1420, pans de bois", page: "troyes-foires-champagne.html", couverture: "images/couvertures/troyes-foires-champagne.webp", couleur: "#C27A3A" },
+  { titre: "Les Ardennes", sousTitre: "Forêt, Meuse, Sedan, Charleville et marionnettes", page: "ardennes.html", couverture: "images/couvertures/ardennes.webp", couleur: "#C27A3A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
