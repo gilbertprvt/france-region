@@ -28,6 +28,11 @@ AME.ajouterLivres("hauts-de-france", [
   { titre: "La pêche et les ports de Boulogne et Dunkerque", sousTitre: "Pêcheurs, corsaires et industrie", page: "peche-ports-boulogne-dunkerque.html", couverture: "images/couvertures/peche.webp", couleur: "#2A5C93" },
   { titre: "Les grands pôles industriels", sousTitre: "Automobile, batteries, trains, avions", page: "poles-industriels.html", couverture: "images/couvertures/pole-industriel.webp", couleur: "#2A5C93" },
   { titre: "Le tunnel sous la Manche", sousTitre: "Deux siècles de rêve, 50 km sous la mer", page: "tunnel-sous-la-manche.html", couverture: "images/couvertures/tunnel.webp", couleur: "#2A5C93" },
+  { titre: "Le bassin minier du Nord-Pas-de-Calais", sousTitre: "Le charbon, les corons et la vie des mineurs", page: "bassin-minier-vie-des-mineurs.html", couverture: "images/couvertures/vie-mineurs.webp", couleur: "#2A5C93" },
+  { titre: "La Première Guerre mondiale", sousTitre: "Artois, Flandre, Somme et Aisne, 1914-1918", page: "premiere-guerre-mondiale.html", couverture: "images/couvertures/guerre-14-18.webp", couleur: "#2A5C93" },
+  { titre: "Louis XIV et les conquêtes du Nord", sousTitre: "Quand Lille, Douai et Valenciennes deviennent françaises", page: "louis-xiv-conquetes-nord.html", couverture: "images/couvertures/louis-xiv.webp", couleur: "#2A5C93" },
+  { titre: "L'industrie textile de Roubaix et Tourcoing", sousTitre: "La laine, les usines et les courées", page: "textile-roubaix-tourcoing.html", couverture: "images/couvertures/textile.webp", couleur: "#2A5C93" },
+  { titre: "La sidérurgie et la métallurgie", sousTitre: "Denain, la Sambre et Dunkerque", page: "siderurgie-metallurgie.html", couverture: "images/couvertures/siderurgie.webp", couleur: "#2A5C93" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
