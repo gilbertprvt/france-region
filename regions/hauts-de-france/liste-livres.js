@@ -13,7 +13,9 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("hauts-de-france", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "Les Hauts-de-France à la loupe", sousTitre: "La région en chiffres, en cartes et en images", page: "hauts-de-france-info.html", couverture: "images/couvertures/hauts-de-france-info.webp", couleur: "#2A5C93" },
+  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes des Hauts-de-France, avec leurs boissons", page: "recettes-hauts-de-france.html", couverture: "images/couvertures/recettes-hauts-de-france.webp", couleur: "#2A5C93" },
+  /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
