@@ -37,6 +37,11 @@ AME.ajouterLivres("normandie", [
   { titre: "La naissance de l'impressionnisme", sousTitre: "Boudin, Monet et la lumière normande", page: "impressionnisme.html", couverture: "images/couvertures/impressionnisme.webp", couleur: "#E8C080" },
   { titre: "Sainte Thérèse de Lisieux", sousTitre: "1873-1897", page: "therese-lisieux.html", couverture: "images/couvertures/therese-lisieux.webp", couleur: "#E8C080" },
   { titre: "Les grands ports transatlantiques", sousTitre: "Le Havre, Cherbourg, le Titanic et le Normandie", page: "ports-transatlantiques.html", couverture: "images/couvertures/ports-transatlantiques.webp", couleur: "#E8C080" },
+  { titre: "Le Mont-Saint-Michel", sousTitre: "Patrimoine mondial depuis 1979", page: "mont-saint-michel.html", couverture: "images/couvertures/mont-saint-michel.webp", couleur: "#E8C080" },
+  { titre: "Le Débarquement du 6 juin 1944", sousTitre: "Et la bataille de Normandie", page: "debarquement.html", couverture: "images/couvertures/debarquement.webp", couleur: "#E8C080" },
+  { titre: "La Reconstruction", sousTitre: "Perret, Le Havre et le Mémorial de Caen", page: "reconstruction.html", couverture: "images/couvertures/reconstruction.webp", couleur: "#E8C080" },
+  { titre: "L'industrie moderne", sousTitre: "Renault, pétrole et nucléaire", page: "industrie-moderne.html", couverture: "images/couvertures/industrie-moderne.webp", couleur: "#E8C080" },
+  { titre: "La réunification de la Normandie", sousTitre: "1er janvier 2016", page: "reunification.html", couverture: "images/couvertures/reunification.webp", couleur: "#E8C080" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
