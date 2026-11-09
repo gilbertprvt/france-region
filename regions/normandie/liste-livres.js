@@ -20,7 +20,7 @@ AME.ajouterLivres("normandie", [
   { titre: "L'âge d'or des abbayes", sousTitre: "Saint-Wandrille et Jumièges au VIIe siècle", page: "abbayes.html", couverture: "images/couvertures/abbayes.webp", couleur: "#E8C080" },
   { titre: "Les raids vikings", sousTitre: "De Rouen en flammes à Rollon (841-911)", page: "raids-vikings.html", couverture: "images/couvertures/vikings.webp", couleur: "#E8C080" },
   { titre: "Le traité de Saint-Clair-sur-Epte", sousTitre: "Charles le Simple, Rollon et la naissance de la Normandie", page: "traite-saint-clair-sur-epte.html", couverture: "images/couvertures/saint-clair-sur-epte.webp", couleur: "#E8C080" },
-  { titre: "Guillaume le Conquérant et la bataille d'Hastings", sousTitre: "De Falaise à Westminster (1066)", page: "hastings.html", couverture: "images/couvertures/hastings-4.webp", couleur: "#E8C080" },
+  { titre: "Guillaume le Conquérant et la bataille d'Hastings", sousTitre: "De Falaise à Westminster (1066)", page: "hastings.html", couverture: "images/couvertures/hastings-5.webp", couleur: "#E8C080" },
   { titre: "Le rattachement à la France (1204)", sousTitre: "Philippe Auguste et Château-Gaillard", page: "rattachement-1204.html", couverture: "images/couvertures/rattachement-1204-4.webp", couleur: "#E8C080" },
   { titre: "La guerre de Cent Ans", sousTitre: "La Normandie anglaise et le procès de Jeanne d'Arc", page: "guerre-cent-ans.html", couverture: "images/couvertures/guerre-cent-ans-2.webp", couleur: "#E8C080" },
   { titre: "La bataille de Formigny (1450)", sousTitre: "La victoire qui libère la Normandie", page: "formigny.html", couverture: "images/couvertures/formigny-2.webp", couleur: "#E8C080" },
