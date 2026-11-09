@@ -42,6 +42,10 @@ AME.ajouterLivres("hauts-de-france", [
   { titre: "Les abbayes du Nord et de Picardie", sousTitre: "Saint-Riquier, Corbie, Saint-Amand, Vaucelles", page: "abbayes-nord-picardie.html", couverture: "images/couvertures/abbayes.webp", couleur: "#2A5C93" },
   { titre: "La guerre de Succession d'Espagne", sousTitre: "Le siège de Lille, Malplaquet et Denain", page: "succession-espagne-siege-lille.html", couverture: "images/couvertures/succession-espagne.webp", couleur: "#2A5C93" },
   { titre: "L'Art déco dans les villes reconstruites", sousTitre: "Saint-Quentin, Béthune, Lens après 1918", page: "art-deco-villes-reconstruites.html", couverture: "images/couvertures/art-deco.webp", couleur: "#2A5C93" },
+  { titre: "La guerre de Cent Ans", sousTitre: "Crécy, Calais, Azincourt et la paix d'Arras", page: "guerre-cent-ans.html", couverture: "images/couvertures/guerre-cent-ans.webp", couleur: "#2A5C93" },
+  { titre: "Lille, capitale des Flandres", sousTitre: "Histoire, monuments, Braderie et culture", page: "lille-capitale-flandres.html", couverture: "images/couvertures/lille.webp", couleur: "#2A5C93" },
+  { titre: "Les châteaux", sousTitre: "Chantilly, Compiègne, Pierrefonds, Villers-Cotterêts", page: "chateaux-hauts-de-france.html", couverture: "images/couvertures/chateaux.webp", couleur: "#2A5C93" },
+  { titre: "La Seconde Guerre mondiale", sousTitre: "Dunkerque, l'Occupation, les V2 et la Libération", page: "seconde-guerre-mondiale.html", couverture: "images/couvertures/guerre-39-45.webp", couleur: "#2A5C93" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
