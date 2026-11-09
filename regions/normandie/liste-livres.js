@@ -13,7 +13,9 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("normandie", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "La Normandie à la loupe", sousTitre: "La région en chiffres, en cartes et en images", page: "normandie-info.html", couverture: "images/couvertures/normandie-info.webp", couleur: "#E8C080" },
+  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes de Normandie, avec leurs boissons", page: "recettes-normandie.html", couverture: "images/couvertures/recettes-normandie.webp", couleur: "#E8C080" },
+  /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
