@@ -42,6 +42,11 @@ AME.ajouterLivres("normandie", [
   { titre: "La Reconstruction", sousTitre: "Perret, Le Havre et le Mémorial de Caen", page: "reconstruction.html", couverture: "images/couvertures/reconstruction.webp", couleur: "#E8C080" },
   { titre: "L'industrie moderne", sousTitre: "Renault, pétrole et nucléaire", page: "industrie-moderne.html", couverture: "images/couvertures/industrie-moderne.webp", couleur: "#E8C080" },
   { titre: "La réunification de la Normandie", sousTitre: "1er janvier 2016", page: "reunification.html", couverture: "images/couvertures/reunification.webp", couleur: "#E8C080" },
+  { titre: "La Tapisserie de Bayeux", sousTitre: "Le récit brodé de la conquête de 1066", page: "tapisserie-bayeux.html", couverture: "images/couvertures/tapisserie-bayeux.webp", couleur: "#E8C080" },
+  { titre: "La mer et la pêche", sousTitre: "Coquilles Saint-Jacques, terre-neuvas et ports normands", page: "mer-et-peche.html", couverture: "images/couvertures/mer-et-peche.webp", couleur: "#E8C080" },
+  { titre: "Le patrimoine architectural", sousTitre: "Colombages, châteaux et cathédrales", page: "patrimoine-architectural.html", couverture: "images/couvertures/patrimoine-architectural.webp", couleur: "#E8C080" },
+  { titre: "Paysages et nature", sousTitre: "Falaises, bocage, marais et parcs naturels", page: "paysages-nature.html", couverture: "images/couvertures/paysages-nature.webp", couleur: "#E8C080" },
+  { titre: "Savants, inventeurs et industriels", sousTitre: "De Laplace à Moulinex", page: "personnalites.html", couverture: "images/couvertures/personnalites.webp", couleur: "#E8C080" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
