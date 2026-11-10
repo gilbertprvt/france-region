@@ -14,7 +14,7 @@
 
 AME.ajouterLivres("bretagne", [
   { titre: "La Bretagne à la loupe", sousTitre: "La région en chiffres, en cartes et en images", page: "bretagne-info.html", couverture: "images/couvertures/bretagne-info.webp", couleur: "#1C5A12" },
-  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes de Bretagne, avec leurs boissons", page: "recettes-bretagne.html", couverture: "images/couvertures/recettes-bretagne.webp", couleur: "#1C5A12" },
+  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes de Bretagne, avec leurs boissons", page: "recettes-bretagne.html", couverture: "images/couvertures/recettes-bretagne-2.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
