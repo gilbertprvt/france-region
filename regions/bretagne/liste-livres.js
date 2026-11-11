@@ -43,6 +43,8 @@ AME.ajouterLivres("bretagne", [
   { titre: "Les Bretons à Paris et l'exode rural", sousTitre: "Montparnasse, les « bonnes bretonnes » et Bécassine", page: "bretons-paris.html", couverture: "images/couvertures/bretons-paris.webp", couleur: "#1C5A12" },
   { titre: "La Première Guerre mondiale", sousTitre: "1914-1918 : les Bretons dans la Grande Guerre", page: "premiere-guerre.html", couverture: "images/couvertures/premiere-guerre.webp", couleur: "#1C5A12" },
   { titre: "La voile et les grands navigateurs", sousTitre: "De Tabarly à la Sailing Valley", page: "voile-navigateurs.html", couverture: "images/couvertures/voile-navigateurs.webp", couleur: "#1C5A12" },
+  { titre: "La Seconde Guerre mondiale", sousTitre: "1939-1945 : Sein, la Résistance et les poches", page: "seconde-guerre.html", couverture: "images/couvertures/seconde-guerre.webp", couleur: "#1C5A12" },
+  { titre: "Les grands écrivains", sousTitre: "Chateaubriand, Renan, Jules Verne…", page: "ecrivains.html", couverture: "images/couvertures/ecrivains.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
