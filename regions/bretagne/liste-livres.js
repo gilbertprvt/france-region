@@ -27,6 +27,11 @@ AME.ajouterLivres("bretagne", [
   { titre: "La guerre de Succession de Bretagne", sousTitre: "1341-1364 : Blois contre Montfort", page: "guerre-succession.html", couverture: "images/couvertures/guerre-succession-2.webp", couleur: "#1C5A12" },
   { titre: "Anne de Bretagne", sousTitre: "1477-1514 : duchesse et deux fois reine", page: "anne-de-bretagne.html", couverture: "images/couvertures/anne-de-bretagne-2.webp", couleur: "#1C5A12" },
   { titre: "L'édit d'Union", sousTitre: "1532 : la Bretagne unie à la France", page: "edit-union.html", couverture: "images/couvertures/edit-union-2.webp", couleur: "#1C5A12" },
+  { titre: "Jacques Cartier", sousTitre: "1534 : le Malouin qui explora le Canada", page: "jacques-cartier.html", couverture: "images/couvertures/jacques-cartier.webp", couleur: "#1C5A12" },
+  { titre: "Lorient et la Compagnie des Indes", sousTitre: "1666 : une ville née du commerce avec l'Asie", page: "lorient-compagnie-indes.html", couverture: "images/couvertures/lorient-compagnie-indes.webp", couleur: "#1C5A12" },
+  { titre: "La révolte des Bonnets rouges", sousTitre: "1675 : la Bretagne contre les impôts de Louis XIV", page: "bonnets-rouges.html", couverture: "images/couvertures/bonnets-rouges.webp", couleur: "#1C5A12" },
+  { titre: "Les corsaires de Saint-Malo", sousTitre: "De Duguay-Trouin à Surcouf", page: "corsaires-saint-malo.html", couverture: "images/couvertures/corsaires-saint-malo.webp", couleur: "#1C5A12" },
+  { titre: "La Chouannerie", sousTitre: "1793-1800 : la guerre des chemins creux", page: "chouannerie.html", couverture: "images/couvertures/chouannerie.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
