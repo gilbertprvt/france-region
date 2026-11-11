@@ -36,6 +36,8 @@ AME.ajouterLivres("bretagne", [
   { titre: "La pêche et les conserveries", sousTitre: "La sardine, Douarnenez et les Penn Sardin", page: "peche-conserveries.html", couverture: "images/couvertures/peche-conserveries.webp", couleur: "#1C5A12" },
   { titre: "La langue et la culture bretonnes", sousTitre: "Breton, gallo, Barzaz Breiz, fest-noz et Gwenn ha du", page: "langue-culture.html", couverture: "images/couvertures/langue-culture.webp", couleur: "#1C5A12" },
   { titre: "La révolution agricole d'après-guerre", sousTitre: "De la petite ferme à l'agroalimentaire", page: "revolution-agricole.html", couverture: "images/couvertures/revolution-agricole.webp", couleur: "#1C5A12" },
+  { titre: "Le renouveau culturel breton", sousTitre: "Des années 1950 à nos jours : Stivell, Diwan, fest-noz", page: "renouveau-culturel.html", couverture: "images/couvertures/renouveau-culturel.webp", couleur: "#1C5A12" },
+  { titre: "La marée noire de l'Amoco Cadiz", sousTitre: "1978 : la catastrophe et le « Plus jamais ça »", page: "amoco-cadiz.html", couverture: "images/couvertures/amoco-cadiz.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
