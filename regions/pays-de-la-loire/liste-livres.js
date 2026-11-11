@@ -13,7 +13,9 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("pays-de-la-loire", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "Les Pays de la Loire à la loupe", sousTitre: "La région en chiffres, en cartes et en images", page: "pays-de-la-loire-info.html", couverture: "images/couvertures/pays-de-la-loire-info.webp", couleur: "#B5520C" },
+  { titre: "Recettes salées & sucrées", sousTitre: "60 recettes des Pays de la Loire, avec leurs boissons", page: "recettes-pays-de-la-loire.html", couverture: "images/couvertures/recettes-pays-de-la-loire.webp", couleur: "#B5520C" },
+  /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
