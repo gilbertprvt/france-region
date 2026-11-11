@@ -29,6 +29,13 @@ AME.ajouterLivres("pays-de-la-loire", [
   { titre: "Les marais salants de Guérande", sousTitre: "Le sel, la fleur de sel et les paludiers", page: "marais-salants.html", couverture: "images/couvertures/marais-salants.webp", couleur: "#B5520C" },
   { titre: "Le vignoble nantais et les vins d'Anjou-Saumur", sousTitre: "Muscadet, Layon, Saumur-Champigny…", page: "vignoble.html", couverture: "images/couvertures/vignoble.webp", couleur: "#B5520C" },
   { titre: "Le patrimoine religieux et les pèlerinages", sousTitre: "Cathédrales, Pontmain, Béhuard, Compostelle", page: "patrimoine-religieux.html", couverture: "images/couvertures/patrimoine-religieux.webp", couleur: "#B5520C" },
+  { titre: "L'industrie textile de Cholet et des Mauges", sousTitre: "Le mouchoir rouge, les usines et la chaussure", page: "textile-cholet.html", couverture: "images/couvertures/textile-cholet.webp", couleur: "#B5520C" },
+  { titre: "Les traditions du bocage vendéen", sousTitre: "Haies, moulins, veillées et fêtes paysannes", page: "bocage-vendeen.html", couverture: "images/couvertures/bocage-vendeen.webp", couleur: "#B5520C" },
+  { titre: "Le maraîchage nantais et l'horticulture angevine", sousTitre: "La mâche, le muguet et les pépinières d'Angers", page: "maraichage.html", couverture: "images/couvertures/maraichage.webp", couleur: "#B5520C" },
+  { titre: "Les faïences de Malicorne", sousTitre: "Un savoir-faire sarthois depuis 1747", page: "faience-malicorne.html", couverture: "images/couvertures/faience-malicorne.webp", couleur: "#B5520C" },
+  { titre: "La dentelle et le point d'Alençon", sousTitre: "La « reine des dentelles », aux portes du Maine", page: "dentelle.html", couverture: "images/couvertures/dentelle.webp", couleur: "#B5520C" },
+  { titre: "Les chantiers navals de Saint-Nazaire", sousTitre: "Du Normandie aux géants de la croisière", page: "chantiers-navals.html", couverture: "images/couvertures/chantiers-navals.webp", couleur: "#B5520C" },
+  { titre: "La Seconde Guerre mondiale", sousTitre: "Les otages, Nantes bombardée et la poche de Saint-Nazaire", page: "seconde-guerre.html", couverture: "images/couvertures/seconde-guerre.webp", couleur: "#B5520C" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
