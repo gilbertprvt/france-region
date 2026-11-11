@@ -32,6 +32,10 @@ AME.ajouterLivres("bretagne", [
   { titre: "La révolte des Bonnets rouges", sousTitre: "1675 : la Bretagne contre les impôts de Louis XIV", page: "bonnets-rouges.html", couverture: "images/couvertures/bonnets-rouges.webp", couleur: "#1C5A12" },
   { titre: "Les corsaires de Saint-Malo", sousTitre: "De Duguay-Trouin à Surcouf", page: "corsaires-saint-malo.html", couverture: "images/couvertures/corsaires-saint-malo.webp", couleur: "#1C5A12" },
   { titre: "La Chouannerie", sousTitre: "1793-1800 : la guerre des chemins creux", page: "chouannerie.html", couverture: "images/couvertures/chouannerie.webp", couleur: "#1C5A12" },
+  { titre: "Les ports et arsenaux", sousTitre: "Brest, Lorient, Saint-Nazaire et Roscoff", page: "ports-arsenaux.html", couverture: "images/couvertures/ports-arsenaux.webp", couleur: "#1C5A12" },
+  { titre: "La pêche et les conserveries", sousTitre: "La sardine, Douarnenez et les Penn Sardin", page: "peche-conserveries.html", couverture: "images/couvertures/peche-conserveries.webp", couleur: "#1C5A12" },
+  { titre: "La langue et la culture bretonnes", sousTitre: "Breton, gallo, Barzaz Breiz, fest-noz et Gwenn ha du", page: "langue-culture.html", couverture: "images/couvertures/langue-culture.webp", couleur: "#1C5A12" },
+  { titre: "La révolution agricole d'après-guerre", sousTitre: "De la petite ferme à l'agroalimentaire", page: "revolution-agricole.html", couverture: "images/couvertures/revolution-agricole.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
