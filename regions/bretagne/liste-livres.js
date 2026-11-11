@@ -40,6 +40,9 @@ AME.ajouterLivres("bretagne", [
   { titre: "La marée noire de l'Amoco Cadiz", sousTitre: "1978 : la catastrophe et le « Plus jamais ça »", page: "amoco-cadiz.html", couverture: "images/couvertures/amoco-cadiz.webp", couleur: "#1C5A12" },
   { titre: "Pont-Aven et les peintres", sousTitre: "Gauguin, Bernard et l'École de Pont-Aven", page: "pont-aven.html", couverture: "images/couvertures/pont-aven.webp", couleur: "#1C5A12" },
   { titre: "L'énergie de la mer", sousTitre: "La Rance, Plogoff et l'éolien en mer", page: "energie-mer.html", couverture: "images/couvertures/energie-mer.webp", couleur: "#1C5A12" },
+  { titre: "Les Bretons à Paris et l'exode rural", sousTitre: "Montparnasse, les « bonnes bretonnes » et Bécassine", page: "bretons-paris.html", couverture: "images/couvertures/bretons-paris.webp", couleur: "#1C5A12" },
+  { titre: "La Première Guerre mondiale", sousTitre: "1914-1918 : les Bretons dans la Grande Guerre", page: "premiere-guerre.html", couverture: "images/couvertures/premiere-guerre.webp", couleur: "#1C5A12" },
+  { titre: "La voile et les grands navigateurs", sousTitre: "De Tabarly à la Sailing Valley", page: "voile-navigateurs.html", couverture: "images/couvertures/voile-navigateurs.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
