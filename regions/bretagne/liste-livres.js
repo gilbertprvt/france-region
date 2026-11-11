@@ -38,6 +38,8 @@ AME.ajouterLivres("bretagne", [
   { titre: "La révolution agricole d'après-guerre", sousTitre: "De la petite ferme à l'agroalimentaire", page: "revolution-agricole.html", couverture: "images/couvertures/revolution-agricole.webp", couleur: "#1C5A12" },
   { titre: "Le renouveau culturel breton", sousTitre: "Des années 1950 à nos jours : Stivell, Diwan, fest-noz", page: "renouveau-culturel.html", couverture: "images/couvertures/renouveau-culturel.webp", couleur: "#1C5A12" },
   { titre: "La marée noire de l'Amoco Cadiz", sousTitre: "1978 : la catastrophe et le « Plus jamais ça »", page: "amoco-cadiz.html", couverture: "images/couvertures/amoco-cadiz.webp", couleur: "#1C5A12" },
+  { titre: "Pont-Aven et les peintres", sousTitre: "Gauguin, Bernard et l'École de Pont-Aven", page: "pont-aven.html", couverture: "images/couvertures/pont-aven.webp", couleur: "#1C5A12" },
+  { titre: "L'énergie de la mer", sousTitre: "La Rance, Plogoff et l'éolien en mer", page: "energie-mer.html", couverture: "images/couvertures/energie-mer.webp", couleur: "#1C5A12" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
