@@ -36,6 +36,13 @@ AME.ajouterLivres("pays-de-la-loire", [
   { titre: "La dentelle et le point d'Alençon", sousTitre: "La « reine des dentelles », aux portes du Maine", page: "dentelle.html", couverture: "images/couvertures/dentelle.webp", couleur: "#B5520C" },
   { titre: "Les chantiers navals de Saint-Nazaire", sousTitre: "Du Normandie aux géants de la croisière", page: "chantiers-navals.html", couverture: "images/couvertures/chantiers-navals.webp", couleur: "#B5520C" },
   { titre: "La Seconde Guerre mondiale", sousTitre: "Les otages, Nantes bombardée et la poche de Saint-Nazaire", page: "seconde-guerre.html", couverture: "images/couvertures/seconde-guerre.webp", couleur: "#B5520C" },
+  { titre: "Les grandes figures littéraires et artistiques", sousTitre: "Du Bellay, Clemenceau, Gracq, le Douanier Rousseau, Demy…", page: "grandes-figures.html", couverture: "images/couvertures/grandes-figures.webp", couleur: "#B5520C" },
+  { titre: "Les 24 Heures du Mans", sousTitre: "Depuis 1923, la course d'endurance la plus célèbre du monde", page: "24h-mans.html", couverture: "images/couvertures/24h-mans.webp", couleur: "#B5520C" },
+  { titre: "Le Cadre noir de Saumur", sousTitre: "L'excellence de l'équitation française", page: "cadre-noir.html", couverture: "images/couvertures/cadre-noir.webp", couleur: "#B5520C" },
+  { titre: "Le Puy du Fou", sousTitre: "De la Cinéscénie de 1978 au parc de renommée mondiale", page: "puy-du-fou.html", couverture: "images/couvertures/puy-du-fou.webp", couleur: "#B5520C" },
+  { titre: "Le Vendée Globe", sousTitre: "Le tour du monde à la voile, seul et sans escale", page: "vendee-globe.html", couverture: "images/couvertures/vendee-globe.webp", couleur: "#B5520C" },
+  { titre: "Les îles de Noirmoutier et d'Yeu", sousTitre: "Le passage du Gois, la Bonnotte et la côte sauvage", page: "iles-noirmoutier-yeu.html", couverture: "images/couvertures/iles-noirmoutier-yeu.webp", couleur: "#B5520C" },
+  { titre: "La pêche et les ports vendéens", sousTitre: "Les Sables-d'Olonne, Saint-Gilles et la sardine", page: "peche-vendee.html", couverture: "images/couvertures/peche-vendee.webp", couleur: "#B5520C" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
