@@ -35,6 +35,8 @@ AME.ajouterLivres("centre-val-de-loire", [
   { titre: "Les fêtes johanniques d'Orléans", sousTitre: "Près de six siècles d'hommage à Jeanne d'Arc", page: "fetes-johanniques.html", couverture: "images/couvertures/fetes-johanniques.webp", couleur: "#1E3F7A" },
   { titre: "Les guerres de Religion", sousTitre: "Orléans, Amboise, Dreux, Blois (1562-1598)", page: "guerres-religion.html", couverture: "images/couvertures/guerres-religion.webp", couleur: "#1E3F7A" },
   { titre: "Le Printemps de Bourges", sousTitre: "Le festival des musiques actuelles depuis 1977", page: "printemps-bourges.html", couverture: "images/couvertures/printemps-bourges.webp", couleur: "#1E3F7A" },
+  { titre: "La guerre de 1870", sousTitre: "Gambetta à Tours, Coulmiers, Loigny et Orléans occupée", page: "guerre-1870.html", couverture: "images/couvertures/guerre-1870.webp", couleur: "#1E3F7A" },
+  { titre: "La Loire, fleuve sauvage", sousTitre: "Îles, crues, levées, castors et sternes", page: "loire-sauvage.html", couverture: "images/couvertures/loire-sauvage.webp", couleur: "#1E3F7A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
