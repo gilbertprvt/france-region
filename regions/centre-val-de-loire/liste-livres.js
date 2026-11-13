@@ -27,6 +27,10 @@ AME.ajouterLivres("centre-val-de-loire", [
   { titre: "La Sologne et la Brenne", sousTitre: "Étangs, forêts, chasse et oiseaux", page: "sologne-brenne.html", couverture: "images/couvertures/sologne-brenne.webp", couleur: "#1E3F7A" },
   { titre: "Les traditions populaires du Berry", sousTitre: "Vielle, bourrée, légendes et George Sand", page: "traditions-berry.html", couverture: "images/couvertures/traditions-berry.webp", couleur: "#1E3F7A" },
   { titre: "Les vignobles du Centre-Val de Loire", sousTitre: "Sancerre, Vouvray, Chinon, Bourgueil…", page: "vignobles.html", couverture: "images/couvertures/vignobles.webp", couleur: "#1E3F7A" },
+  { titre: "Les châteaux de la Loire", sousTitre: "Forteresses, Renaissance et jardins", page: "chateaux.html", couverture: "images/couvertures/chateaux.webp", couleur: "#1E3F7A" },
+  { titre: "Jeanne d'Arc et la libération d'Orléans", sousTitre: "Le siège de 1428-1429, Patay et le sacre", page: "jeanne-arc.html", couverture: "images/couvertures/jeanne-arc.webp", couleur: "#1E3F7A" },
+  { titre: "Les Gaulois et les Romains", sousTitre: "Carnutes, Turons, Bituriges et villes gallo-romaines", page: "gaulois-romains.html", couverture: "images/couvertures/gaulois-romains.webp", couleur: "#1E3F7A" },
+  { titre: "Les rois de France en Val de Loire", sousTitre: "De Charles VII à François Ier", page: "rois-loire.html", couverture: "images/couvertures/rois-loire.webp", couleur: "#1E3F7A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
