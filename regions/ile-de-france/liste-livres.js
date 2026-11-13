@@ -13,7 +13,9 @@
    ══════════════════════════════════════════════════════════════ */
 
 AME.ajouterLivres("ile-de-france", [
-  /* Aucun livre pour l'instant. Modèle à recopier :
+  { titre: "L'Île-de-France à la loupe", sousTitre: "La région capitale en chiffres, en cartes et en histoire", page: "ile-de-france-info.html", couverture: "images/couvertures/ile-de-france-info.webp", couleur: "#6E3B23" },
+  { titre: "Recettes salées & sucrées", sousTitre: "Bistrots, brasseries et grande pâtisserie parisienne", page: "recettes-ile-de-france.html", couverture: "images/couvertures/recettes-ile-de-france.webp", couleur: "#6E3B23" },
+  /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
     page: "nom-du-livre.html",
