@@ -37,6 +37,10 @@ AME.ajouterLivres("centre-val-de-loire", [
   { titre: "Le Printemps de Bourges", sousTitre: "Le festival des musiques actuelles depuis 1977", page: "printemps-bourges.html", couverture: "images/couvertures/printemps-bourges.webp", couleur: "#1E3F7A" },
   { titre: "La guerre de 1870", sousTitre: "Gambetta à Tours, Coulmiers, Loigny et Orléans occupée", page: "guerre-1870.html", couverture: "images/couvertures/guerre-1870.webp", couleur: "#1E3F7A" },
   { titre: "La Loire, fleuve sauvage", sousTitre: "Îles, crues, levées, castors et sternes", page: "loire-sauvage.html", couverture: "images/couvertures/loire-sauvage.webp", couleur: "#1E3F7A" },
+  { titre: "La Première Guerre mondiale", sousTitre: "Avord, Bourges et les Américains à Tours et Gièvres", page: "premiere-guerre.html", couverture: "images/couvertures/premiere-guerre.webp", couleur: "#1E3F7A" },
+  { titre: "L'énergie et l'industrie", sousTitre: "Centrales de la Loire, Cosmetic Valley, pharmacie, défense", page: "energie-industrie.html", couverture: "images/couvertures/energie-industrie.webp", couleur: "#1E3F7A" },
+  { titre: "Les forêts du Centre-Val de Loire", sousTitre: "Forêt d'Orléans, Chambord, Sologne et Tronçais", page: "forets.html", couverture: "images/couvertures/forets.webp", couleur: "#1E3F7A" },
+  { titre: "La Révolution et l'Empire", sousTitre: "Départements, Napoléon, Talleyrand à Valençay", page: "revolution-empire.html", couverture: "images/couvertures/revolution-empire.webp", couleur: "#1E3F7A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
