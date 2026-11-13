@@ -172,7 +172,7 @@
       var a = el('a');
       a.href = '#' + c.id;
       a.innerHTML = '<span class="livre-som-ico"></span><span class="livre-som-titre"></span>' +
-        '<span class="livre-som-points"></span><span class="livre-som-num" data-num="' + c.id + '">000</span>';
+        '<span class="livre-som-points"></span><span class="livre-som-num" data-num="' + c.id + '">' + (chapitres.length > 150 ? '0000' : '000') + '</span>';   // très gros livre : numéros à 4 chiffres
       a.querySelector('.livre-som-ico').textContent = c.icone;
       a.querySelector('.livre-som-titre').textContent = c.titre;
       li.appendChild(a); liste.appendChild(li);

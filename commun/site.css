@@ -2608,3 +2608,22 @@ body.mode-livre .produit-body { padding: 6px 0 10px; }
   position: fixed; top: 12px; right: 14px; width: 40px; height: 40px; border-radius: 50%;
   border: 1px solid #C8843A; background: white; color: #2C4A7C; font-size: 18px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,.12);
 }
+
+/* Étagère nationale « Toute la France » (france.html) */
+.accueil-collection {
+  max-width: 1240px; margin: 0 auto 48px; padding: 26px 24px 30px;
+  background: #FBF7EE; border: 1px solid #D9CBB0; border-radius: 16px; text-align: center;
+  box-shadow: inset 0 0 40px rgba(139,115,85,.12);
+}
+.accueil-collection h2 { font-family: var(--font-titre); color: #2C4A7C; font-size: calc(26px + var(--taille-plus)); }
+.accueil-collection-texte { font-style: italic; color: #8B7355; margin: 4px 0 20px; font-size: calc(14px + var(--taille-plus)); }
+.accueil-collection-livres { display: flex; flex-wrap: wrap; justify-content: center; gap: 36px; }
+.accueil-tome { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 170px; text-decoration: none; color: #3A2A14; }
+.accueil-tome img {
+  width: 170px; aspect-ratio: 1029 / 1528; object-fit: cover; border-radius: 3px 8px 8px 3px; background: var(--cuir);
+  box-shadow: -6px 0 0 var(--cuir), 0 10px 22px rgba(60,40,20,.35); transition: transform .25s, box-shadow .25s;
+}
+.accueil-tome:hover img, .accueil-tome:focus-visible img { transform: translateY(-6px) rotate(-1deg); box-shadow: -6px 0 0 var(--cuir), 0 16px 30px rgba(60,40,20,.42); }
+.accueil-tome-titre { font-family: var(--font-titre); font-weight: 700; font-size: calc(16px + var(--taille-plus)); line-height: 1.25; }
+.accueil-tome-titre small { display: block; font-family: var(--font-corps); font-weight: 500; color: #8B7355; font-size: calc(13px + var(--taille-plus)); margin-top: 3px; }
+@media (max-width: 600px) { .accueil-collection { margin: 0 12px 32px; padding: 20px 12px; } .accueil-collection-livres { gap: 20px; } .accueil-tome, .accueil-tome img { width: 140px; } }
