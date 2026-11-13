@@ -31,6 +31,10 @@ AME.ajouterLivres("centre-val-de-loire", [
   { titre: "Jeanne d'Arc et la libération d'Orléans", sousTitre: "Le siège de 1428-1429, Patay et le sacre", page: "jeanne-arc.html", couverture: "images/couvertures/jeanne-arc.webp", couleur: "#1E3F7A" },
   { titre: "Les Gaulois et les Romains", sousTitre: "Carnutes, Turons, Bituriges et villes gallo-romaines", page: "gaulois-romains.html", couverture: "images/couvertures/gaulois-romains.webp", couleur: "#1E3F7A" },
   { titre: "Les rois de France en Val de Loire", sousTitre: "De Charles VII à François Ier", page: "rois-loire.html", couverture: "images/couvertures/rois-loire.webp", couleur: "#1E3F7A" },
+  { titre: "La construction des cathédrales gothiques", sousTitre: "Chartres et Bourges, le chantier et ses métiers", page: "construction-cathedrales.html", couverture: "images/couvertures/construction-cathedrales.webp", couleur: "#1E3F7A" },
+  { titre: "Les fêtes johanniques d'Orléans", sousTitre: "Près de six siècles d'hommage à Jeanne d'Arc", page: "fetes-johanniques.html", couverture: "images/couvertures/fetes-johanniques.webp", couleur: "#1E3F7A" },
+  { titre: "Les guerres de Religion", sousTitre: "Orléans, Amboise, Dreux, Blois (1562-1598)", page: "guerres-religion.html", couverture: "images/couvertures/guerres-religion.webp", couleur: "#1E3F7A" },
+  { titre: "Le Printemps de Bourges", sousTitre: "Le festival des musiques actuelles depuis 1977", page: "printemps-bourges.html", couverture: "images/couvertures/printemps-bourges.webp", couleur: "#1E3F7A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
