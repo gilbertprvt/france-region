@@ -41,6 +41,7 @@ AME.ajouterLivres("centre-val-de-loire", [
   { titre: "L'énergie et l'industrie", sousTitre: "Centrales de la Loire, Cosmetic Valley, pharmacie, défense", page: "energie-industrie.html", couverture: "images/couvertures/energie-industrie.webp", couleur: "#1E3F7A" },
   { titre: "Les forêts du Centre-Val de Loire", sousTitre: "Forêt d'Orléans, Chambord, Sologne et Tronçais", page: "forets.html", couverture: "images/couvertures/forets.webp", couleur: "#1E3F7A" },
   { titre: "La Révolution et l'Empire", sousTitre: "Départements, Napoléon, Talleyrand à Valençay", page: "revolution-empire.html", couverture: "images/couvertures/revolution-empire.webp", couleur: "#1E3F7A" },
+  { titre: "Le Perche et le cheval percheron", sousTitre: "Bocage, manoirs et chevaux de trait", page: "perche.html", couverture: "images/couvertures/perche.webp", couleur: "#1E3F7A" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
