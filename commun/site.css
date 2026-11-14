@@ -2620,7 +2620,7 @@ body.mode-livre .produit-body { padding: 6px 0 10px; }
 .accueil-collection-livres { display: flex; flex-wrap: wrap; justify-content: center; gap: 36px; }
 .accueil-tome { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 170px; text-decoration: none; color: #3A2A14; }
 .accueil-tome img {
-  width: 170px; aspect-ratio: 1029 / 1528; object-fit: cover; border-radius: 3px 8px 8px 3px; background: var(--cuir);
+  width: 170px; aspect-ratio: 1600 / 2054; object-fit: cover; border-radius: 3px 8px 8px 3px; background: var(--cuir);
   box-shadow: -6px 0 0 var(--cuir), 0 10px 22px rgba(60,40,20,.35); transition: transform .25s, box-shadow .25s;
 }
 .accueil-tome:hover img, .accueil-tome:focus-visible img { transform: translateY(-6px) rotate(-1deg); box-shadow: -6px 0 0 var(--cuir), 0 16px 30px rgba(60,40,20,.42); }
