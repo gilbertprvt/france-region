@@ -25,6 +25,11 @@ AME.ajouterLivres("ile-de-france", [
   { titre: "Le premier vol en montgolfière (1783)", sousTitre: "Pilâtre de Rozier et le marquis d'Arlandes", page: "montgolfiere.html", couverture: "images/couvertures/montgolfiere.webp", couleur: "#6E3B23" },
   { titre: "La prise de la Bastille (1789)", sousTitre: "Le 14 juillet et la Révolution", page: "bastille.html", couverture: "images/couvertures/bastille.webp", couleur: "#6E3B23" },
   { titre: "Le Louvre devient un musée (1793)", sousTitre: "Du palais des rois au musée de tous", page: "louvre-musee.html", couverture: "images/couvertures/louvre-musee.webp", couleur: "#6E3B23" },
+  { titre: "Le mètre étalon (1799)", sousTitre: "La naissance du système métrique", page: "metre-etalon.html", couverture: "images/couvertures/metre-etalon.webp", couleur: "#6E3B23" },
+  { titre: "Le premier train de Paris (1837)", sousTitre: "La ligne Paris – Saint-Germain-en-Laye", page: "premier-train.html", couverture: "images/couvertures/premier-train.webp", couleur: "#6E3B23" },
+  { titre: "La naissance de la photographie (1839)", sousTitre: "Daguerre, Niépce et Arago", page: "photographie.html", couverture: "images/couvertures/photographie.webp", couleur: "#6E3B23" },
+  { titre: "Les grands travaux d'Haussmann (1853-1870)", sousTitre: "Le nouveau visage de Paris", page: "haussmann.html", couverture: "images/couvertures/haussmann.webp", couleur: "#6E3B23" },
+  { titre: "La Commune de Paris (1871)", sousTitre: "Soixante-douze jours de révolution", page: "commune-paris.html", couverture: "images/couvertures/commune-paris.webp", couleur: "#6E3B23" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
