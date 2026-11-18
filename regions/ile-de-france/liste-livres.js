@@ -40,6 +40,11 @@ AME.ajouterLivres("ile-de-france", [
   { titre: "La libération de Paris (1944)", sousTitre: "Les journées d'août 1944", page: "liberation-paris.html", couverture: "images/couvertures/liberation-paris.webp", couleur: "#6E3B23" },
   { titre: "La Défense et le CNIT (1958)", sousTitre: "Naissance d'un quartier d'affaires", page: "la-defense.html", couverture: "images/couvertures/la-defense.webp", couleur: "#6E3B23" },
   { titre: "Mai 68", sousTitre: "Étudiants, ouvriers et grèves", page: "mai-68.html", couverture: "images/couvertures/mai-68.webp", couleur: "#6E3B23" },
+  { titre: "Roissy-Charles-de-Gaulle (1974)", sousTitre: "Le grand aéroport de Paris", page: "roissy.html", couverture: "images/couvertures/roissy.webp", couleur: "#6E3B23" },
+  { titre: "Le Centre Pompidou (1977)", sousTitre: "Un musée qui ne ressemble à aucun autre", page: "centre-pompidou.html", couverture: "images/couvertures/centre-pompidou.webp", couleur: "#6E3B23" },
+  { titre: "Disneyland Paris (1992)", sousTitre: "D'Euro Disney à Marne-la-Vallée", page: "disneyland-paris.html", couverture: "images/couvertures/disneyland-paris.webp", couleur: "#6E3B23" },
+  { titre: "L'Accord de Paris (2015)", sousTitre: "La COP21 au Bourget", page: "accord-paris.html", couverture: "images/couvertures/accord-paris.webp", couleur: "#6E3B23" },
+  { titre: "Paris 2024", sousTitre: "Les Jeux olympiques et Notre-Dame retrouvée", page: "paris-2024.html", couverture: "images/couvertures/paris-2024.webp", couleur: "#6E3B23" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
