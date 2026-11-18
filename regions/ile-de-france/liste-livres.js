@@ -36,6 +36,10 @@ AME.ajouterLivres("ile-de-france", [
   { titre: "Pierre et Marie Curie (1898)", sousTitre: "La découverte du radium", page: "curie-radium.html", couverture: "images/couvertures/curie-radium.webp", couleur: "#6E3B23" },
   { titre: "Louis Renault (1898)", sousTitre: "La première voiture et Boulogne-Billancourt", page: "louis-renault.html", couverture: "images/couvertures/louis-renault.webp", couleur: "#6E3B23" },
   { titre: "Paris 1900 : le métro et les Jeux", sousTitre: "La première ligne et les Jeux olympiques", page: "paris-1900.html", couverture: "images/couvertures/paris-1900.webp", couleur: "#6E3B23" },
+  { titre: "Le traité de Versailles (1919)", sousTitre: "La paix signée dans la galerie des Glaces", page: "traite-versailles.html", couverture: "images/couvertures/traite-versailles.webp", couleur: "#6E3B23" },
+  { titre: "La libération de Paris (1944)", sousTitre: "Les journées d'août 1944", page: "liberation-paris.html", couverture: "images/couvertures/liberation-paris.webp", couleur: "#6E3B23" },
+  { titre: "La Défense et le CNIT (1958)", sousTitre: "Naissance d'un quartier d'affaires", page: "la-defense.html", couverture: "images/couvertures/la-defense.webp", couleur: "#6E3B23" },
+  { titre: "Mai 68", sousTitre: "Étudiants, ouvriers et grèves", page: "mai-68.html", couverture: "images/couvertures/mai-68.webp", couleur: "#6E3B23" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
