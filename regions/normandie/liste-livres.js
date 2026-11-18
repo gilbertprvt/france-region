@@ -46,7 +46,7 @@ AME.ajouterLivres("normandie", [
   { titre: "La mer et la pêche", sousTitre: "Coquilles Saint-Jacques, terre-neuvas et ports normands", page: "mer-et-peche.html", couverture: "images/couvertures/mer-et-peche.webp?v=20261118", couleur: "#E8C080" },
   { titre: "Le patrimoine architectural", sousTitre: "Colombages, châteaux et cathédrales", page: "patrimoine-architectural.html", couverture: "images/couvertures/patrimoine-architectural.webp?v=20261118", couleur: "#E8C080" },
   { titre: "Paysages et nature", sousTitre: "Falaises, bocage, marais et parcs naturels", page: "paysages-nature.html", couverture: "images/couvertures/paysages-nature.webp?v=20261118", couleur: "#E8C080" },
-  { titre: "Savants, inventeurs et industriels", sousTitre: "De Laplace à Moulinex", page: "personnalites.html", couverture: "images/couvertures/personnalites.webp?v=20261118b", couleur: "#E8C080" },
+  { titre: "Savants, inventeurs et industriels", sousTitre: "De Laplace à Moulinex", page: "personnalites.html", couverture: "images/couvertures/personnalites.webp?v=20261118c", couleur: "#E8C080" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
