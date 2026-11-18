@@ -30,6 +30,12 @@ AME.ajouterLivres("ile-de-france", [
   { titre: "La naissance de la photographie (1839)", sousTitre: "Daguerre, Niépce et Arago", page: "photographie.html", couverture: "images/couvertures/photographie.webp", couleur: "#6E3B23" },
   { titre: "Les grands travaux d'Haussmann (1853-1870)", sousTitre: "Le nouveau visage de Paris", page: "haussmann.html", couverture: "images/couvertures/haussmann.webp", couleur: "#6E3B23" },
   { titre: "La Commune de Paris (1871)", sousTitre: "Soixante-douze jours de révolution", page: "commune-paris.html", couverture: "images/couvertures/commune-paris.webp", couleur: "#6E3B23" },
+  { titre: "Pasteur et la rage (1885)", sousTitre: "Le premier vaccin donné à un homme", page: "pasteur-rage.html", couverture: "images/couvertures/pasteur-rage.webp", couleur: "#6E3B23" },
+  { titre: "La tour Eiffel (1889)", sousTitre: "L'Exposition universelle et la « dame de fer »", page: "tour-eiffel.html", couverture: "images/couvertures/tour-eiffel.webp", couleur: "#6E3B23" },
+  { titre: "La première séance de cinéma (1895)", sousTitre: "Les frères Lumière au Grand Café", page: "cinema-lumiere.html", couverture: "images/couvertures/cinema-lumiere.webp", couleur: "#6E3B23" },
+  { titre: "Pierre et Marie Curie (1898)", sousTitre: "La découverte du radium", page: "curie-radium.html", couverture: "images/couvertures/curie-radium.webp", couleur: "#6E3B23" },
+  { titre: "Louis Renault (1898)", sousTitre: "La première voiture et Boulogne-Billancourt", page: "louis-renault.html", couverture: "images/couvertures/louis-renault.webp", couleur: "#6E3B23" },
+  { titre: "Paris 1900 : le métro et les Jeux", sousTitre: "La première ligne et les Jeux olympiques", page: "paris-1900.html", couverture: "images/couvertures/paris-1900.webp", couleur: "#6E3B23" },
   /* Modèle à recopier :
   { titre: "Titre du livre",
     sousTitre: "sous-titre (facultatif)",
