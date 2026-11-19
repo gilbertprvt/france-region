@@ -1,7 +1,7 @@
 // Consultation hors connexion du site.
 // Les pages sont d'abord demandées à internet (pour avoir la dernière version), sinon on prend la copie gardée.
 // Les images et les sons sont pris dans la copie gardée s'ils y sont, sinon sur internet.
-const CACHE = 'site-hors-ligne';
+const CACHE = 'site-hors-ligne-2';  // changer ce nom vide les anciennes copies gardées
 const MEDIA = /\.(webp|jpe?g|png|gif|svg|ico|mp3|m4a|ogg|wav|mp4|webm|woff2?|ttf|otf)$/i;
 const SCOPE = new URL(self.registration.scope);
 
@@ -9,7 +9,8 @@ self.addEventListener('install', e => {
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(c => c.add(new Request(SCOPE.href, {cache: 'reload'}))).catch(() => {}));
 });
-self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
+self.addEventListener('activate', e => e.waitUntil(
+  caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())));
 
 self.addEventListener('fetch', e => {
   const r = e.request;
@@ -34,10 +35,17 @@ async function chercher(c, url) {
 }
 async function copieDabord(r) {
   const c = await caches.open(CACHE);
-  const m = await chercher(c, r.url);
+  // Une image demandée avec une version (?v=…) n'est reprise de la copie que si c'est la même version :
+  // ainsi une couverture ou une photo remplacée s'affiche tout de suite.
+  const exacte = r.url.split('#')[0];
+  const versionnee = /[?&]v=/.test(exacte);
+  const m = versionnee ? await c.match(exacte) : await chercher(c, r.url);
   if (m) return m;
-  try { const n = await fetch(r); if (n.ok) c.put(r.url.split('#')[0].split('?')[0], n.clone()); return n; }
-  catch (e) { return new Response('', {status: 504}); }
+  try {
+    const n = await fetch(r);
+    if (n.ok) { c.put(exacte.split('?')[0], n.clone()); if (versionnee) c.put(exacte, n.clone()); }
+    return n;
+  } catch (e) { const g = await chercher(c, r.url); return g || new Response('', {status: 504}); }
 }
 async function internetDabord(r) {
   const c = await caches.open(CACHE);
