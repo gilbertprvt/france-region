@@ -31,10 +31,9 @@ body{margin:0;background:#24180f;color:#fff;font-family:Georgia,serif;display:gr
 .opened .enter{opacity:0;pointer-events:none}
 .note{position:absolute;z-index:5;bottom:2%;left:2%;padding:.5em .8em;background:#20150cbb;border-radius:8px;font-size:clamp(11px,1.3vw,18px);pointer-events:none}
 .opened .note{display:none}
-/* Icône : accès direct à la carte, sans l'animation */
+/* Bouton « Passer l'intro » : accès direct à la carte, sans l'animation */
 .direct{position:fixed;z-index:20;top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;
-  font:600 clamp(12px,1.4vw,16px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;background:#20150ccc;border:1px solid #ffffff55;border-radius:16px;padding:6px 12px 6px 6px;box-shadow:0 4px 14px #0006}
-.direct img{width:clamp(36px,4.5vw,56px);height:auto;display:block;border-radius:12px}
+  font:600 clamp(13px,1.4vw,17px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;background:#20150ccc;border:1px solid #ffffff55;border-radius:999px;padding:10px 18px;box-shadow:0 4px 14px #0006}
 .direct:hover,.direct:focus-visible{background:#3a2614ee;outline:3px solid #FAC775;outline-offset:2px}
 .opened ~ .direct{opacity:0;pointer-events:none;transition:opacity .5s}
 /* La carte des régions apparaît en fondu enchaîné */
@@ -45,7 +44,7 @@ body{margin:0;background:#24180f;color:#fff;font-family:Georgia,serif;display:gr
 </head>
 <!-- Page d'entrée animée : Papy ouvre les portes (images dans commun/entree/).
      Clic sur « Entrée » → les portes s'ouvrent → la bibliothèque apparaît → 2 secondes → fondu vers la carte (france.html).
-     L'icône en haut à droite mène directement à la carte. -->
+     Le bouton « Passer l'intro », en haut à droite, mène directement à la carte. -->
 <body>
 <main class="scene" id="scene" aria-label="Entrée animée de la bibliothèque de Papy des Régions">
   <img class="interior" src="commun/entree/bibliotheque.webp" alt="">
@@ -55,7 +54,7 @@ body{margin:0;background:#24180f;color:#fff;font-family:Georgia,serif;display:gr
   <button class="enter" id="enter" aria-label="Entrée : ouvrir les portes de la bibliothèque" title="Cliquez pour entrer"></button>
   <span class="note">Cliquez sur la flèche « Entrée »</span>
 </main>
-<a class="direct" href="france.html" title="Aller directement à la carte des régions"><img src="commun/entree/icone.png" alt=""><span>Accès direct<br>à la carte</span></a>
+<a class="direct" href="france.html" title="Aller directement à la carte des régions">Passer l’intro ⏭</a>
 <script>
 (function () {
   var scene = document.getElementById('scene'), parti = false;

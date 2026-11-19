@@ -3,7 +3,7 @@
   "short_name": "Régions",
   "description": "La carte de France et la bibliothèque de chaque région.",
   "lang": "fr",
-  "start_url": "./france.html",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F7F3EC",
