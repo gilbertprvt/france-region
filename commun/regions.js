@@ -10,7 +10,7 @@
 
 window.AME = {
 
-  afficherOutreMer: false,
+  afficherOutreMer: true,
 
   regions: [
     /* ─── Métropole ─── */
