@@ -3,28 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bibliothèque des régions de France</title>
-  <meta name="description" content="Une bibliothèque par région de France." />
-  <link rel="stylesheet" href="commun/site.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
-  <!-- Hors connexion et installation sur l'écran d'accueil -->
+  <title>Papy des Régions — Bibliothèque des régions de France</title>
+  <meta name="description" content="Papy vous ouvre les portes de la bibliothèque des régions de France." />
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta name="theme-color" content="#2C4A7C">
+  <link rel="preload" as="image" href="commun/entree/facade.webp">
+  <link rel="prefetch" href="france.html">
+<style>
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:#24180f;color:#fff;font-family:Georgia,serif;display:grid;place-items:center;overflow:hidden}
+.scene{position:relative;width:min(100vw,150vh,1536px);aspect-ratio:3/2;overflow:hidden;isolation:isolate;background:#24180f}
+.interior,.facade,.reveal{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.interior{z-index:0}
+.reveal{z-index:6;opacity:0;pointer-events:none;transition:opacity 1.7s ease 3.3s}
+.opened .reveal{opacity:1}
+.facade{z-index:2;pointer-events:none}
+.door{position:absolute;z-index:1;top:24.9%;height:66.9%;background-repeat:no-repeat;background-size:100% 100%;transform:scaleX(1);transition:transform 3.4s cubic-bezier(.35,.05,.16,1);will-change:transform}
+.left{left:38.74%;width:18.23%;background-image:url('commun/entree/porte_gauche.webp');transform-origin:left center}
+.right{left:56.97%;width:16.6%;background-image:url('commun/entree/porte_droite.webp');transform-origin:right center}
+.opened .left,.opened .right{transform:scaleX(.015)}
+.enter{position:absolute;z-index:4;left:6.5%;top:65%;width:29%;height:22%;border:0;background:transparent;cursor:pointer;transform:rotate(-2deg);border-radius:12px}
+.enter:focus-visible{outline:5px solid #fff;outline-offset:3px}
+.enter:hover{filter:drop-shadow(0 0 12px #ffe899)}
+.opened .enter{opacity:0;pointer-events:none}
+.note{position:absolute;z-index:5;bottom:2%;left:2%;padding:.5em .8em;background:#20150cbb;border-radius:8px;font-size:clamp(11px,1.3vw,18px);pointer-events:none}
+.opened .note{display:none}
+/* Icône : accès direct à la carte, sans l'animation */
+.direct{position:fixed;z-index:20;top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;
+  font:600 clamp(12px,1.4vw,16px)/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;background:#20150ccc;border:1px solid #ffffff55;border-radius:16px;padding:6px 12px 6px 6px;box-shadow:0 4px 14px #0006}
+.direct img{width:clamp(36px,4.5vw,56px);height:auto;display:block;border-radius:12px}
+.direct:hover,.direct:focus-visible{background:#3a2614ee;outline:3px solid #FAC775;outline-offset:2px}
+.opened ~ .direct{opacity:0;pointer-events:none;transition:opacity .5s}
+/* La carte des régions apparaît en fondu enchaîné */
+.carte{position:fixed;inset:0;width:100%;height:100%;border:0;z-index:30;opacity:0;pointer-events:none;background:#F7F3EC;transition:opacity 2.2s ease-in-out}
+.carte.visible{opacity:1}
+@media(prefers-reduced-motion:reduce){.door{transition-duration:.1s}.reveal{transition-delay:.1s;transition-duration:.1s}.carte{transition-duration:.3s}}
+</style>
 </head>
-<!--
-  PAGE D'ENTRÉE (provisoire).
-  Pour mettre une photo en fond plus tard : placer l'image dans le dossier « commun »
-  (par exemple commun/entree.webp) puis ajouter sur la ligne <body> ci-dessous :
-     style="background-image: url('commun/entree.webp')"
--->
-<body class="page-entree">
-  <main class="entree-cadre">
-    <h1 class="entree-titre">Bibliothèque des <em>régions</em> de France</h1>
-    <p class="entree-texte">Des livres à feuilleter, région par région.</p>
-    <a class="entree-bouton" href="france.html">Entrer →</a>
-  </main>
-  <script src="hors-ligne.js"></script>
+<!-- Page d'entrée animée : Papy ouvre les portes (images dans commun/entree/).
+     Clic sur « Entrée » → les portes s'ouvrent → la bibliothèque apparaît → 2 secondes → fondu vers la carte (france.html).
+     L'icône en haut à droite mène directement à la carte. -->
+<body>
+<main class="scene" id="scene" aria-label="Entrée animée de la bibliothèque de Papy des Régions">
+  <img class="interior" src="commun/entree/bibliotheque.webp" alt="">
+  <div class="door left" aria-hidden="true"></div><div class="door right" aria-hidden="true"></div>
+  <img class="facade" src="commun/entree/facade.webp" alt="Papy devant les portes de sa bibliothèque">
+  <img class="reveal" src="commun/entree/bibliotheque.webp" alt="L'intérieur de la bibliothèque">
+  <button class="enter" id="enter" aria-label="Entrée : ouvrir les portes de la bibliothèque" title="Cliquez pour entrer"></button>
+  <span class="note">Cliquez sur la flèche « Entrée »</span>
+</main>
+<a class="direct" href="france.html" title="Aller directement à la carte des régions"><img src="commun/entree/icone.png" alt=""><span>Accès direct<br>à la carte</span></a>
+<script>
+(function () {
+  var scene = document.getElementById('scene'), parti = false;
+  var lent = !window.matchMedia || !matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var OUVERTURE = lent ? 5000 : 300,  // portes ouvertes + bibliothèque entière affichée
+      PAUSE = 2000,                    // on admire la bibliothèque 2 secondes
+      FONDU = lent ? 2200 : 300;       // fondu enchaîné vers la carte
+  document.getElementById('enter').addEventListener('click', function () {
+    if (parti) return; parti = true;
+    scene.classList.add('opened');
+    // la carte se charge en arrière-plan pendant l'ouverture des portes
+    var f = document.createElement('iframe');
+    f.className = 'carte'; f.src = 'france.html'; f.title = 'Carte des régions'; f.setAttribute('tabindex', '-1');
+    document.body.appendChild(f);
+    setTimeout(function () {
+      f.classList.add('visible');
+      setTimeout(function () { location.replace('france.html'); }, FONDU + 100);
+    }, OUVERTURE + PAUSE);
+  });
+})();
+</script>
+<script src="hors-ligne.js"></script>
 </body>
 </html>

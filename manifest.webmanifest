@@ -3,7 +3,7 @@
   "short_name": "Régions",
   "description": "La carte de France et la bibliothèque de chaque région.",
   "lang": "fr",
-  "start_url": "./",
+  "start_url": "./france.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F7F3EC",
@@ -12,13 +12,20 @@
     {
       "src": "icone-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icone-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icone-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

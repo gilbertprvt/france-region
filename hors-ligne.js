@@ -3,7 +3,7 @@
    Mise à jour automatique : à l'ouverture avec internet (au plus toutes les 30 minutes), seuls les fichiers
    nouveaux ou modifiés sont téléchargés, sur les appareils où le site a déjà été enregistré en entier. */
 (function () {
-  var script = document.currentScript, BASE = new URL('.', script.src), CACHE = 'site-hors-ligne';
+  var script = document.currentScript, BASE = new URL('.', script.src), CACHE = 'site-hors-ligne-2';
   var IDX = new URL('__liste-hors-ligne.json', BASE).href, ATTENTE = 30 * 60 * 1000;
   if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) navigator.serviceWorker.register(new URL('sw.js', BASE).href).catch(function () {});
   if (!('caches' in window) || !window.fetch || !window.Promise) return;
