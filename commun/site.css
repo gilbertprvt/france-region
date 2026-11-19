@@ -1835,18 +1835,12 @@ body.mode-livre .produit-body { padding: 6px 0 10px; }
 .accueil-badge circle { fill: #2C4A7C; stroke: #FAC775; stroke-width: 2; }
 .accueil-badge text { fill: white; font: 700 15px var(--font-corps); text-anchor: middle; }
 
-/* Encarts d'outre-mer */
+/* Encarts d'outre-mer, placés autour de la carte de France */
 .accueil-encarts[hidden] { display: none; }
-.accueil-encarts {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
-  margin-top: 14px; padding-top: 14px; border-top: 1px dashed #D9CBB0;
-}
-.accueil-encart { background: rgba(255,255,255,.55); border: 1px solid #E0D4BC; border-radius: 10px; padding: 4px 4px 6px; }
-.accueil-encart svg { width: 100%; height: auto; display: block; }
-.accueil-encart .region path { stroke-width: 1; }
-.accueil-encart figcaption {
-  text-align: center; font-size: calc(11px + var(--taille-plus)); color: #5A3E1B; font-family: var(--font-corps);
-}
+.accueil-encart-fond { fill: rgba(255,255,255,.7); stroke: #D9CBB0; stroke-width: 1.2; }
+.accueil-encart:hover .accueil-encart-fond, .accueil-encart:focus-within .accueil-encart-fond { stroke: #C8843A; stroke-width: 2; }
+.accueil-encart .region path { stroke-width: 1; vector-effect: non-scaling-stroke; }
+.accueil-encart-nom { text-anchor: middle; font: 600 16px var(--font-corps); fill: #5A3E1B; pointer-events: none; }
 
 /* Panneau d'information */
 .accueil-panneau {
@@ -1886,7 +1880,6 @@ body.mode-livre .produit-body { padding: 6px 0 10px; }
   .accueil { grid-template-columns: 1fr; padding: 16px 12px 30px; }
   .accueil-panneau { position: static; }
   .accueil-france { max-height: none; }
-  .accueil-encarts { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* Bouton « Bibliothèque » dans la barre du livre */

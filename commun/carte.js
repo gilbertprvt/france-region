@@ -76,6 +76,6 @@
 
   /* Outre-mer : affiché seulement si regions.js le demande */
   var encarts = document.querySelector('.accueil-encarts');
-  if (encarts) encarts.hidden = !AME.afficherOutreMer;
+  if (encarts) { if (AME.afficherOutreMer) encarts.removeAttribute('hidden'); else encarts.setAttribute('hidden', ''); }
   document.body.classList.toggle('avec-outremer', !!AME.afficherOutreMer);
 })();
